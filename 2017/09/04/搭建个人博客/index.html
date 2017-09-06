@@ -97,7 +97,7 @@
 
 <meta name="description" content="简单搭建博客的环境和如何新建一个简单的文章和怎么部署到github">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20分钟教你使用hexo搭建github博客（一）">
+<meta property="og:title" content="20分钟教你使用hexo搭建个人博客（一）">
 <meta property="og:url" content="http://yoursite.com/2017/09/04/搭建个人博客/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
 <meta property="og:description" content="简单搭建博客的环境和如何新建一个简单的文章和怎么部署到github">
@@ -113,12 +113,14 @@
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/7.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/12.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/10.png">
+<meta property="og:image" content="http://yoursite.com/images/image.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/11.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/11.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/10.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/路径">
-<meta property="og:updated_time" content="2017-09-05T08:20:32.844Z">
+<meta property="og:updated_time" content="2017-09-05T10:16:22.464Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20分钟教你使用hexo搭建github博客（一）">
+<meta name="twitter:title" content="20分钟教你使用hexo搭建个人博客（一）">
 <meta name="twitter:description" content="简单搭建博客的环境和如何新建一个简单的文章和怎么部署到github">
 <meta name="twitter:image" content="http://yoursite.com/2017/09/04/搭建个人博客/node-v.png">
 
@@ -156,7 +158,7 @@
 
 
 
-  <title>20分钟教你使用hexo搭建github博客（一） | Nina' blog</title>
+  <title>20分钟教你使用hexo搭建个人博客（一） | Nina' blog</title>
   
 
 
@@ -220,6 +222,46 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-serach">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            serach
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            Über
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -258,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Nina Cho">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -270,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">20分钟教你使用hexo搭建github博客（一）</h1>
+          <h1 class="post-title" itemprop="name headline">20分钟教你使用hexo搭建个人博客（一）</h1>
         
 
         <div class="post-meta">
@@ -346,33 +388,27 @@
       
 
       
-        <h3 id="预览：-https-ninacho-github-io"><a href="#预览：-https-ninacho-github-io" class="headerlink" title="预览： https://ninacho.github.io/"></a>预览： <a href="https://ninacho.github.io/" target="_blank" rel="external">https://ninacho.github.io/</a></h3><ul>
-<li><p><b>hexo 和 jekyll 区别在哪里</b><br>  hexo使用nodejs， jekyll使用Ruby 就是因为nodejs的安装和用nodejs编写的hexo安装步骤比ruby简单n倍， 并且速度也快n倍，就这么简单</p></li><p></p>
-
-<li><p><b>安装hexo本地环境</b><a id="more"></a></p>
-<ul>
-<li>安装nodejs<br>下载nodejs <a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">https://nodejs.org/zh-cn/</a><br>打开msi文件 一直下一步安装ok后，检测PATH环境变量是否配置了Node.js，点击开始=》运行=》输入”cmd” =&gt; 输入命令”path”，输出如下结果：<pre><code>PATH=C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;
+        <h5 id="hexo-和-jekyll-区别在哪里"><a href="#hexo-和-jekyll-区别在哪里" class="headerlink" title="hexo 和 jekyll 区别在哪里"></a><b>hexo 和 jekyll 区别在哪里</b></h5><p>hexo使用nodejs， jekyll使用Ruby 就是因为nodejs的安装和用nodejs编写的hexo安装步骤比ruby简单n倍， 并且速度也快n倍，就这么简单</p>
+<h5 id="安装hexo本地环境"><a href="#安装hexo本地环境" class="headerlink" title="安装hexo本地环境"></a><b>安装hexo本地环境</b><a id="more"></a></h5><h6 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h6><p>下载nodejs <a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">https://nodejs.org/zh-cn/</a><br>打开msi文件 一直下一步安装ok后，检测PATH环境变量是否配置了Node.js，点击开始=》运行=》输入”cmd” =&gt; 输入命令”path”，输出如下结果：</p>
+<pre><code>PATH=C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;
 C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;
 c:\python32\python;C:\MinGW\bin;C:\Program Files\GTK2-Runtime\lib;
 C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\nodejs\;
 C:\Users\rg\AppData\Roaming\npm
-</code></pre>我们可以看到环境变量中已经包含了C:\Program Files\nodejs\<br>检查Node.js版本输入<b>node -v</b>返回下图表示安装成功<br><img src="node-v.png" alt=""></li>
-<li>安装npm<br>npm在nodejs安装过程中已经自带安装的，输入<b>npm -v</b> 返回下图表示安装成功<br><img src="npm-v.png" alt=""></li>
-<li>安装本地hexo<pre><code>npm i hexo-cli  -g # 选择一目录执行
+</code></pre><p>我们可以看到环境变量中已经包含了C:\Program Files\nodejs\<br>检查Node.js版本输入<b>node -v</b>返回下图表示安装成功<br><img src="node-v.png" alt=""></p>
+<h6 id="安装npm"><a href="#安装npm" class="headerlink" title="安装npm"></a>安装npm</h6><p>npm在nodejs安装过程中已经自带安装的，输入<b>npm -v</b> 返回下图表示安装成功<br><img src="npm-v.png" alt=""></p>
+<h6 id="安装本地hexo"><a href="#安装本地hexo" class="headerlink" title="安装本地hexo"></a>安装本地hexo</h6><pre><code>npm i hexo-cli  -g # 选择一目录执行
 cd C/ninacho/blog # cd 目录
 hexo init
 hexo g # 生成静态页面
-</code></pre>打开浏览器<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 本地预览 看到hexo的页面即ok</li>
-</ul>
-</li>
-<li><p><b>部署github pages</b><br>1、注册github账号 点击<a href="https://github.com/" target="_blank" rel="external">这里</a>开始注册<br>2、安装GitHub的本地客户端 msysgit是Windows版的Git，从<a href="https://git-for-windows.github.io" target="_blank" rel="external">https://git-for-windows.github.io</a>下载（网速慢的同学请移步国内镜像），然后按默认选项安装即可。<br>3、安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！<br>4、创建git个人仓库<br>—— 登录<a href="https://github.com/" target="_blank" rel="external">github</a><br>—— new Repositories 如下图<br>  <img src="3.png" alt=""><br>—— 如下图 填写在后面的Respository name 里面输入：username.github.io 这个格式是定的，username是你要设置的名字<br>  <img src="4.png" alt=""></p>
-</li>
-<li><p><b>github pages结合hexo</b><br>—— 部署到gitHub上 只需要在配置文件_config.xml中作如下修改：</p>
+</code></pre><p>打开浏览器<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 本地预览 看到hexo的页面即ok</p>
+<h5 id="部署github-pages"><a href="#部署github-pages" class="headerlink" title="部署github pages"></a><b>部署github pages</b></h5><p>1、注册github账号 点击<a href="https://github.com/" target="_blank" rel="external">这里</a>开始注册<br>2、安装GitHub的本地客户端 msysgit是Windows版的Git，从<a href="https://git-for-windows.github.io" target="_blank" rel="external">https://git-for-windows.github.io</a>下载（网速慢的同学请移步国内镜像），然后按默认选项安装即可。<br>3、安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！<br>4、创建git个人仓库<br>—— 登录<a href="https://github.com/" target="_blank" rel="external">github</a><br>—— new Repositories 如下图<br>    <img src="3.png" alt=""><br>—— 如下图 填写在后面的Respository name 里面输入：username.github.io 这个格式是定的，username是你要设置的名字<br>    <img src="4.png" alt=""></p>
+<h5 id="github-pages结合hexo"><a href="#github-pages结合hexo" class="headerlink" title="github pages结合hexo"></a><b>github pages结合hexo</b></h5><p>—— 部署到gitHub上 只需要在配置文件_config.xml中作如下修改：</p>
 <pre><code>deploy:
 type: git
 repo: git@github.com:NinaCho/ninacho.github.io.git
 branch: master
-</code></pre><p>  <img src="5.png" alt=""><br>—— 将本地hexo部署到github</p>
+</code></pre><p><img src="5.png" alt=""><br>—— 将本地hexo部署到github</p>
 <pre><code>hexo g  # 编译生成静态页面
 hexo d  # 发布到github
 </code></pre><p>如果hexo d的时候 提示git地址错误 无法提交 把_config.xml中的repo修改为之前创建的个人仓库的地址如：</p>
@@ -381,29 +417,34 @@ type: git
 repo: https://github.com/NinaCho/ninacho.github.io.git
 branch: master
 hexo d # 后回车
-</code></pre><p>輸入賬號密碼 如圖<br><img src="8.png" alt=""> <img src="9.png" alt=""><br>如果你是第一次安裝git則需要你输入ssh key 下面我们来创建ssh key<br>—— 去到github页面， 打开setting， 如图<br><img src="6.png" alt=""><br>桌面打开本地的刚刚安装的Git Bash 在命令窗口输入</p>
+</code></pre><p>輸入賬號密碼 如圖<br> <img src="8.png" alt=""> <img src="9.png" alt=""><br>如果你是第一次安裝git則需要你输入ssh key 下面我们来创建ssh key<br>—— 去到github页面， 打开setting， 如图<br><img src="6.png" alt=""><br>桌面打开本地的刚刚安装的Git Bash 在命令窗口输入</p>
 <pre><code>ssh-keygen # 连续三次回车
 </code></pre><p>生成ok后 控制台会打印出默认保存的文件 根据提示去到文件目录，拷贝.ssh/id_rsa.pub文件内的所以内容，将它粘帖到github帐号管理中的添加SSH key界面中， 如图<br><img src="7.png" alt=""><br>点击确定，出现下图代码表示提交成功<br><img src="12.png" alt=""><br>十分钟后 打开<a href="https://ninacho.github.io/" target="_blank" rel="external">https://ninacho.github.io/</a> 即可看到hexo的页面，<br>如果看不到就去githun你之前创建的仓库查看 hexo的编译后代码是否已经上传成功</p>
-</li>
-<li><b>hexo新建导航</b><br>打开本地hexo部署项目中的xxx/themes/_config.yml ,下图就是设置导航的配置 注意这里是themes文件内的配置文件<pre><code># Header
+<h5 id="hexo新建导航"><a href="#hexo新建导航" class="headerlink" title="hexo新建导航"></a><b>hexo新建导航</b></h5><p>打开本地hexo部署项目中的xxx/themes/_config.yml ,下图就是设置导航的配置 注意这里是themes文件内的配置文件</p>
+<pre><code># Header
 menu:
 Home: /
 Archives: /archives
 rss: /atom.xml
+</code></pre><h5 id="新建文件"><a href="#新建文件" class="headerlink" title="新建文件"></a><b>新建文件</b></h5><ul>
+<li><p>去到hexo本地项目目录， 打开Git Bash</p>
+<pre><code>hexo n &apos;文件名&apos; # 可以是中文
 </code></pre></li>
-<li><b>新建文件</b>  </li>
-<li>去到hexo本地项目目录， 打开Git Bash<pre><code>hexo n &apos;文件名&apos; # 可以是中文
-</code></pre>回车后在hexo项目中source/_posts下会生成对应的文件名.md, 这里建议改下配置执行新建时再创建对应的存储图片的文件夹，配置如下：<br>找到全局配置文件’_config.yml’, 找到‘post_asset_folder’设置属性为true<pre><code>post_asset_folder: true # true 表示 hexo new 文件名 会生多一个文件夹存储图片or其他文件
-</code></pre>再次执行 ‘hexo n ‘文件名’’ 就会生成下图<br><img src="10.png" alt=""></li>
-<li>解释： 本地hexo的’_config.yml’一共有三个， 一个是全局（配置全局文件，就在根目录下），一个主题（配置主题文件，就在themes/_config,yml），一个是编译后的(在public内，不用理会)</li>
-<li><b>新建分类</b><br>直接在新建的md文件内添加’categories’ 属性表示分类， 如下<pre><code>title: 动画
+</ul>
+<p>回车后在hexo项目中source/_posts下会生成对应的文件名.md, 这里建议改下配置执行新建时再创建对应的存储图片的文件夹，配置如下：<br>找到全局配置文件’_config.yml’, 找到‘post_asset_folder’设置属性为true</p>
+<pre><code>post_asset_folder: true # true 表示 hexo new 文件名 会生多一个文件夹存储图片or其他文件
+</code></pre><p>再次执行 ‘hexo n ‘文件名’’ 就会生成下图<br><img src="10.png" alt=""></p>
+<ul>
+<li><p>解释： 本地hexo的’_config.yml’一共有三个， 一个是全局（配置全局文件，就在根目录下），一个主题（配置主题文件，就在themes/_config,yml），一个是编译后的(在public内，不用理会)<br>#####新建分类<br>直接在新建的md文件内添加’categories’ 属性表示分类， 如下</p>
+<pre><code>title: 动画
 date: 2017-09-01 10:26:37
 tags:
 categories: 动画
-</code></pre>或者可以直接在scaffolds/post.md 下添加’categories’属性 这样new之后的默认页面都会有这个属性</li>
-<li><b>插入图片</b><br>有三种方式可以插入图片<br>1、将本地图片放置在根目录下的source/images, 没有images就自己创建文件夹，<pre><code>![](/images/image.jpg) # [xxx] 这里输入文字 会显示在图片下方 表示图片标题
-</code></pre>刷新本地页面直接可以看到 如图<br><img src="11.png" alt=""><br>2、 将本地图片放置在下图的对应文件夹处, 需要’hexo g’ 编译后图片才能查看 否则无法查看<pre><code>![](11.png) # 这里的路径直接相对路径就好 11.png对应文件名称
-</code></pre>如图<br><img src="10.png" alt=""><br>3、将图片上传到cdn域名将生成的url添加在文章即可</li>
+</code></pre></li>
+</ul>
+<p>或者可以直接在scaffolds/post.md 下添加’categories’属性 这样new之后的默认页面都会有这个属性</p>
+<h5 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a><b>插入图片</b></h5><p>有三种方式可以插入图片<br>1、将本地图片放置在根目录下的source/images, 没有images就自己创建文件夹，<br>            <img src="/images/image.jpg" alt=""> # [xxx] 这里输入文字 会显示在图片下方 表示图片标题<br>刷新本地页面直接可以看到 如图<br><img src="11.png" alt=""><br>2、 将本地图片放置在下图的对应文件夹处, 需要’hexo g’ 编译后图片才能查看 否则无法查看<br>        <img src="11.png" alt=""> # 这里的路径直接相对路径就好 11.png对应文件名称<br>如图<br><img src="10.png" alt=""><br>3、将图片上传到cdn域名将生成的url添加在文章即可</p>
+<ul>
 <li>以上插入图片除了可以通过markdown的引用方式之外 还可以直接<img src="路径"><br>以上内容是简单搭建博客 编写文章的步骤，如果想更多操作请查看<br><a href="/2017/09/05/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89/">搭建个人博客（二）</a></li>
 </ul>
 
@@ -472,8 +513,6 @@ categories: 动画
           
   <div class="comments" id="comments">
     
-      <div id="uyan_frame"></div>
-    
   </div>
 
 
@@ -498,16 +537,20 @@ categories: 动画
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
 
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/images/avatar.jpg"
+              alt="Nina Cho" />
           
             <p class="site-author-name" itemprop="name">Nina Cho</p>
             <p class="site-description motion-element" itemprop="description"></p>
@@ -568,7 +611,7 @@ categories: 动画
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#预览：-https-ninacho-github-io"><span class="nav-number">1.</span> <span class="nav-text">预览： https://ninacho.github.io/</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo-和-jekyll-区别在哪里"><span class="nav-number">1.</span> <span class="nav-text">hexo 和 jekyll 区别在哪里</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装hexo本地环境"><span class="nav-number">2.</span> <span class="nav-text">安装hexo本地环境</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#安装nodejs"><span class="nav-number">2.1.</span> <span class="nav-text">安装nodejs</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装npm"><span class="nav-number">2.2.</span> <span class="nav-text">安装npm</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装本地hexo"><span class="nav-number">2.3.</span> <span class="nav-text">安装本地hexo</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署github-pages"><span class="nav-number">3.</span> <span class="nav-text">部署github pages</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#github-pages结合hexo"><span class="nav-number">4.</span> <span class="nav-text">github pages结合hexo</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo新建导航"><span class="nav-number">5.</span> <span class="nav-text">hexo新建导航</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#新建文件"><span class="nav-number">6.</span> <span class="nav-text">新建文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#插入图片"><span class="nav-number">7.</span> <span class="nav-text">插入图片</span></a></li></ol></div>
             
 
           </div>
@@ -601,12 +644,15 @@ categories: 动画
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">SHARE TOGETHER</div>
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.2</div>
+  <div class="theme-info">本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp&nbsp&nbsp
+您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴</div>
 
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
         
 
@@ -720,14 +766,6 @@ categories: 动画
 
 
 
-  
-    
-
-    
-      <!-- UY BEGIN -->
-      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2143249"></script>
-      <!-- UY END -->
-    
   
 
 

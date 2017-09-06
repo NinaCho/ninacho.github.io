@@ -95,21 +95,24 @@
 
 
 
-<meta name="description" content="添加博客必要功能 置顶，评论，换主题等">
+<meta name="description" content="添加博客必要功能 置顶按钮，评论，换主题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20分钟教你使用hexo搭建github博客（二）">
+<meta property="og:title" content="20分钟教你使用hexo搭建个人博客（二）">
 <meta property="og:url" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
-<meta property="og:description" content="添加博客必要功能 置顶，评论，换主题等">
+<meta property="og:description" content="添加博客必要功能 置顶按钮，评论，换主题">
 <meta property="og:locale" content="chinese">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/1.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/2.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/5.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/6.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/3.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/4.png">
-<meta property="og:updated_time" content="2017-09-05T08:31:53.982Z">
+<meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/7.png">
+<meta property="og:updated_time" content="2017-09-06T06:10:58.614Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20分钟教你使用hexo搭建github博客（二）">
-<meta name="twitter:description" content="添加博客必要功能 置顶，评论，换主题等">
+<meta name="twitter:title" content="20分钟教你使用hexo搭建个人博客（二）">
+<meta name="twitter:description" content="添加博客必要功能 置顶按钮，评论，换主题">
 <meta name="twitter:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/1.png">
 
 
@@ -146,7 +149,7 @@
 
 
 
-  <title>20分钟教你使用hexo搭建github博客（二） | Nina' blog</title>
+  <title>20分钟教你使用hexo搭建个人博客（二） | Nina' blog</title>
   
 
 
@@ -210,6 +213,46 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-serach">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            serach
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            Über
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -248,7 +291,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Nina Cho">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -260,7 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">20分钟教你使用hexo搭建github博客（二）</h1>
+          <h1 class="post-title" itemprop="name headline">20分钟教你使用hexo搭建个人博客（二）</h1>
         
 
         <div class="post-meta">
@@ -319,7 +362,7 @@
 
           
               <div class="post-description">
-                  添加博客必要功能 置顶，评论，换主题等
+                  添加博客必要功能 置顶按钮，评论，换主题
               </div>
           
 
@@ -336,57 +379,81 @@
       
 
       
-        <ul>
-<li><p><b>添加置顶按钮</b> <a id="more"></a><br>  1、找到’themes/landscape/source/js’ 创建文件’totop.js’, 将以下代码粘贴至该文件</p>
-<pre><code>(function($) {
-    // When to show the scroll link
-    // higher number = scroll link appears further down the page
-    var upperLimit = 1000;
+        <h5 id="添加置顶按钮"><a href="#添加置顶按钮" class="headerlink" title="添加置顶按钮 "></a><b>添加置顶按钮</b> <a id="more"></a></h5><pre><code>1、找到&apos;themes/landscape/source/js&apos; 创建文件&apos;totop.js&apos;, 将以下代码粘贴至该文件
+        (function($) {
+            // When to show the scroll link
+            // higher number = scroll link appears further down the page
+            var upperLimit = 1000;
 
-    // Our scroll link element
-    var scrollElem = $(&apos;#totop&apos;);
+            // Our scroll link element
+            var scrollElem = $(&apos;#totop&apos;);
 
-    // Scroll to top speed
-    var scrollSpeed = 500;
+            // Scroll to top speed
+            var scrollSpeed = 500;
 
-    // Show and hide the scroll to top link based on scroll position
-    scrollElem.hide();
-    $(window).scroll(function () {
-        var scrollTop = $(document).scrollTop();
-        if ( scrollTop &gt; upperLimit ) {
-            $(scrollElem).stop().fadeTo(300, 1); // fade back in
-        }else{
-            $(scrollElem).stop().fadeTo(300, 0); // fade out
-        }
-    });
+            // Show and hide the scroll to top link based on scroll position
+            scrollElem.hide();
+            $(window).scroll(function () {
+                var scrollTop = $(document).scrollTop();
+                if ( scrollTop &gt; upperLimit ) {
+                    $(scrollElem).stop().fadeTo(300, 1); // fade back in
+                }else{
+                    $(scrollElem).stop().fadeTo(300, 0); // fade out
+                }
+            });
 
-    // Scroll to top animation on click
-    $(scrollElem).click(function(){
-        $(&apos;html, body&apos;).animate({scrollTop:0}, scrollSpeed); return false;
-    });
-})(jQuery);
-</code></pre><p>  2、找到’themes/landscape/layout/_partial/after-footer.ejs’ 将以下代码添加至文件尾</p>
+            // Scroll to top animation on click
+            $(scrollElem).click(function(){
+                $(&apos;html, body&apos;).animate({scrollTop:0}, scrollSpeed); return false;
+            });
+        })(jQuery);
+</code></pre><p>2、找到’themes/landscape/layout/_partial/after-footer.ejs’ 将以下代码添加至文件尾</p>
 <pre><code>&lt;%- partial(&apos;totop&apos;) %&gt;
 &lt;script src=&quot;&lt;%- config.root %&gt;js/totop.js&quot;&gt;&lt;/script&gt;
-</code></pre><p>  3、找到’themes/landscape/layout/_partial’，创建文件’totop.ejs’, 将以下代码粘贴至该文件</p>
+</code></pre><p>3、找到’themes/landscape/layout/_partial’，创建文件’totop.ejs’, 将以下代码粘贴至该文件</p>
 <pre><code>&lt;div id=&quot;totop&quot; style=&quot;position:fixed;bottom:150px;right:50px;cursor: pointer;&quot;&gt;
 &lt;a title=&quot;返回顶部&quot;&gt;&lt;img src=&quot;/images/scrollup.png&quot; width=&quot;50%&quot;/&gt;&lt;/a&gt;
 &lt;/div&gt;
-</code></pre><p>  这里的img 图片路径 搞死我了 一开始是放在themes内的 发现’hexo g’编译后找不到，本地是可以跟踪到的, 后来发现编译后的图片路径是有改变的 至于改变到哪里具体要去看源码<br>  所以类似这样公共图片的，简单粗暴的放在跟根目录下的images下。<br>  4、将backtop的图片添加至根目录下的images下， 如图<br>  <img src="1.png" alt=""><br>  5、 执行’hexo g’, 刷新页面即可</p>
-</li>
-<li><b>更换主题</b><br>找到你喜欢的主题git链接，如next的主题就是’<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next’<br>打开GitBash 定位到随便一个目录。执行下面代码<pre><code>git clone  https://github.com/iissnan/hexo-theme-next themes/next
-</code></pre>下载后 你会发现有个文件夹’themes’ 打开该文件夹，复制里面’next’的文件夹至本地hexo的’/themes’下，如图<br>  <img src="2.png" alt=""><br>执行下面代码<pre><code>hexo clean # 清除缓存
+</code></pre><p>这里的img 图片路径 搞死我了 一开始是放在themes内的 发现’hexo g’编译后找不到，本地是可以跟踪到的, 后来发现编译后的图片路径是有改变的 至于改变到哪里具体要去看源码<br>所以类似这样公共图片的，简单粗暴的放在跟根目录下的images下。<br>4、将backtop的图片添加至根目录下的images下， 如图<br><img src="1.png" alt=""><br>5、 执行’hexo g’, 刷新页面即可</p>
+<h5 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a><b>更换主题</b></h5><p>找到你喜欢的主题git链接，如next的主题就是’<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next’， <a href="http://theme-next.iissnan.com/third-party-services.html" target="_blank" rel="external">nextAPI</a><br>打开GitBash 定位到随便一个目录。执行下面代码</p>
+<pre><code>git clone  https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre><p>下载后 你会发现有个文件夹’themes’ 打开该文件夹，复制里面’next’的文件夹至本地hexo的’/themes’下，如图<br> <img src="2.png" alt=""><br>执行下面代码</p>
+<pre><code>hexo clean # 清除缓存
 hexo g # 编译
 hexo s -p 3600 # 本地预览 打开locahost:3600 预览ok
 hexo d # 本地预览ok 就部署至gtihub
-</code></pre></li>
-<li><b>添加评论功能</b><br>NexT目前出到5.1.0版本，功能模块已经相当的丰富。NexT主题集成了评论系统，只需要设置相关的属性即可实现功能，<br>其目前支持多说、Disqus、Facebook评论、Hyper评论、网页云跟帖等，其中“多说”是NexT推荐的评论系统，但是多说评论系统不稳定，经常会出现服务异常的问题<br>所以我看了下其他人的博客发现友言挺多人推荐的，下面来添加友言版的评论<br>1、 注册<a href="http://www.uyan.cc/" target="_blank" rel="external">友言官网</a><br>  注册后 出现下图<br>  <img src="3.png" alt=""><br>2、打开next主题配置文件，在其中找到属性youyan_uid，然后在:后添加之前复制的uid，如下图所示：<br>  <img src="4.png" alt=""></li>
-<li>如果配置文件找到的’youyan_uid’被注释掉的，去掉注释就行了<h5 id="这里强调一下：所有属性的设置，其-后必须有一个空格。"><a href="#这里强调一下：所有属性的设置，其-后必须有一个空格。" class="headerlink" title="这里强调一下：所有属性的设置，其:后必须有一个空格。"></a>这里强调一下：所有属性的设置，其:后必须有一个空格。</h5></li>
-<li><b>统计访问量</b></li>
-<li><b>一起来提升访问量</b></li>
-<li><b>热更新的尝试</b></li>
-</ul>
-
+</code></pre><p>本地预览是ok的 但是gtihub.io上面看的主题没有改变 那就是缓存问题 强刷页面 骚等十分钟再去查看即可<br>修改主题底部，找了很多资料都没查出来 好烦躁呀 不改实在对不起我的强迫症<br><img src="5.png" alt=""><br>終于都給我找到怎麽改了, 下面就一起來修改<br>1、找到’\themes\next\layout_partials\’下面的footer.swig文件，打开会发现，如下图的语句，修改为你要的就行了，修改后 重新编译下 刷新页面就行了<br><img src="6.png" alt=""></p>
+<h5 id="添加评论功能-待续……"><a href="#添加评论功能-待续……" class="headerlink" title="添加评论功能 待续……"></a><b>添加评论功能</b> 待续……</h5><p>NexT目前出到5.1.0版本，功能模块已经相当的丰富。NexT主题集成了评论系统，只需要设置相关的属性即可实现功能，<br>其目前支持多说、Disqus、Facebook评论、Hyper评论、网页云跟帖等，其中“多说”是NexT推荐的评论系统,但是官网项目关闭了 omgggg 不活了<br>所以我看了下其他人的博客发现友言挺多人推荐的，下面来</p>
+<h6 id="添加友言版的评论功能"><a href="#添加友言版的评论功能" class="headerlink" title="添加友言版的评论功能"></a><div id="youyan">添加友言版的评论功能</div></h6><p>1、 注册<a href="http://www.uyan.cc/" target="_blank" rel="external">友言官网</a><br>    注册后 出现下图<br>    <img src="3.png" alt=""><br>2、打开next主题配置文件，在其中找到属性youyan_uid，然后在:后添加之前复制的uid，如下图所示：<br>    <img src="4.png" alt=""></p>
+<p>如果配置文件找到的’youyan_uid’被注释掉的，去掉注释就行了，<br>但是部署上去后发现gtihub并没有显示评论功能，本地预览是ok的，所以友言后续我有时间再去看下什么原因，这个原因待续….<br>其实next是集成了Disqus的 但是你懂得 中国国情<br>1、<br>如需取消某个 页面/文章 的评论，在 md 文件的 front-matter 中增加 comments: false<br>这里强调一下：所有属性的设置，其:后必须有一个空格。</p>
+<h5 id="添加头像"><a href="#添加头像" class="headerlink" title="添加头像"></a><b>添加头像</b></h5><p>在站点配置文件，不是主题配置文件中，（其实设置在哪个配置文件都可以生效，但设置在主题配置的时候如果后续你要换主题那么头像配置也就没有了）添加：（如果是注释去掉注释就行了，不存在就新增）</p>
+<pre><code>avatar: url #avatar: /iamges/avatar.jpg （路径是在source/iamges下）
+</code></pre><p>把侧边栏头像变成圆形，并且鼠标停留在上面发生旋转效果<br>修改themes\next\source\css_common\components\sidebar\sidebar-author.styl,找到’site-author-image’這個類，將以下代碼替換，刷新頁面即可</p>
+<pre><code>.site-author-image {
+    display: block;
+    margin: 0 auto; 
+    padding: $site-author-image-padding; 
+    max-width: $site-author-image-width; 
+    height: $site-author-image-height; 
+    border: $site-author-image-border-color;
+    border-radius: 50%;
+    webkit-transition: 1.4s all; 
+    moz-transition: 1.4s all; 
+    ms-transition: 1.4s all; transition: 1.4s all; 
+}
+.site-author-image:hover { 
+    background-color: #55DAE1; 
+    webkit-transform: rotate(360deg) scale(1.1); 
+    moz-transform: rotate(360deg) scale(1.1); 
+    ms-transform: rotate(360deg) scale(1.1); 
+    transform: rotate(360deg) scale(1.1); 
+} 
+</code></pre><h5 id="统计访问量"><a href="#统计访问量" class="headerlink" title="统计访问量"></a><b>统计访问量</b></h5><p>我看站点访问统计量计算 多人推荐我使用不蒜子，那就用这个吧，下面来操作<br>找到站点的themes/next/layout/_partials目录下的footer.swig文件</p>
+<pre><code>&lt;script async src=&quot;https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;
+本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; &amp;nbsp&amp;nbsp&amp;nbsp
+您是第&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;个来到的小伙伴
+</code></pre><p>如图：我是插在这里，位置看大家喜欢<br><img src="7.png" alt=""></p>
+<h5 id="一起来提升访问量"><a href="#一起来提升访问量" class="headerlink" title="一起来提升访问量"></a><b>一起来提升访问量</b></h5><h5 id="热更新的尝试"><a href="#热更新的尝试" class="headerlink" title="热更新的尝试"></a><b>热更新的尝试</b></h5><h5 id="随时随地修改你的博客"><a href="#随时随地修改你的博客" class="headerlink" title="随时随地修改你的博客"></a><b>随时随地修改你的博客</b></h5>
       
     </div>
     
@@ -448,8 +515,6 @@ hexo d # 本地预览ok 就部署至gtihub
           
   <div class="comments" id="comments">
     
-      <div id="uyan_frame"></div>
-    
   </div>
 
 
@@ -474,16 +539,20 @@ hexo d # 本地预览ok 就部署至gtihub
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
 
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/images/avatar.jpg"
+              alt="Nina Cho" />
           
             <p class="site-author-name" itemprop="name">Nina Cho</p>
             <p class="site-description motion-element" itemprop="description"></p>
@@ -544,7 +613,7 @@ hexo d # 本地预览ok 就部署至gtihub
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#这里强调一下：所有属性的设置，其-后必须有一个空格。"><span class="nav-number">1.</span> <span class="nav-text">这里强调一下：所有属性的设置，其:后必须有一个空格。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加置顶按钮"><span class="nav-number">1.</span> <span class="nav-text">添加置顶按钮 </span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#更换主题"><span class="nav-number">2.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加评论功能-待续……"><span class="nav-number">3.</span> <span class="nav-text">添加评论功能 待续……</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#添加友言版的评论功能"><span class="nav-number">3.1.</span> <span class="nav-text">添加友言版的评论功能</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加头像"><span class="nav-number">4.</span> <span class="nav-text">添加头像</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#统计访问量"><span class="nav-number">5.</span> <span class="nav-text">统计访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一起来提升访问量"><span class="nav-number">6.</span> <span class="nav-text">一起来提升访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#热更新的尝试"><span class="nav-number">7.</span> <span class="nav-text">热更新的尝试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#随时随地修改你的博客"><span class="nav-number">8.</span> <span class="nav-text">随时随地修改你的博客</span></a></li></ol></div>
             
 
           </div>
@@ -577,12 +646,15 @@ hexo d # 本地预览ok 就部署至gtihub
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">SHARE TOGETHER</div>
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.2</div>
+  <div class="theme-info">本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp&nbsp&nbsp
+您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴</div>
 
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
         
 
@@ -696,14 +768,6 @@ hexo d # 本地预览ok 就部署至gtihub
 
 
 
-  
-    
-
-    
-      <!-- UY BEGIN -->
-      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2143249"></script>
-      <!-- UY END -->
-    
   
 
 
