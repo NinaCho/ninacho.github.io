@@ -96,12 +96,12 @@
 
 
 
-<meta name="description" content="添加博客必要功能 置顶按钮，评论，换主题">
+<meta name="description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，添加搜索框，如何随时随地修改博客">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20分钟教你使用hexo搭建个人博客（二）">
+<meta property="og:title" content="30分钟教你使用hexo搭建个人博客（二）">
 <meta property="og:url" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
-<meta property="og:description" content="添加博客必要功能 置顶按钮，评论，换主题">
+<meta property="og:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，添加搜索框，如何随时随地修改博客">
 <meta property="og:locale" content="chinese">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/1.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/2.png">
@@ -111,10 +111,11 @@
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/4.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/7.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/8.png">
-<meta property="og:updated_time" content="2017-09-06T06:46:26.382Z">
+<meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/9.png">
+<meta property="og:updated_time" content="2017-09-06T07:36:44.861Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20分钟教你使用hexo搭建个人博客（二）">
-<meta name="twitter:description" content="添加博客必要功能 置顶按钮，评论，换主题">
+<meta name="twitter:title" content="30分钟教你使用hexo搭建个人博客（二）">
+<meta name="twitter:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，添加搜索框，如何随时随地修改博客">
 <meta name="twitter:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/1.png">
 
 
@@ -151,7 +152,7 @@
 
 
 
-  <title>20分钟教你使用hexo搭建个人博客（二） | Nina' blog</title>
+  <title>30分钟教你使用hexo搭建个人博客（二） | Nina' blog</title>
   
 
 
@@ -211,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -231,7 +232,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -251,7 +252,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Über
+            About
           </a>
         </li>
       
@@ -305,7 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">20分钟教你使用hexo搭建个人博客（二）</h1>
+          <h1 class="post-title" itemprop="name headline">30分钟教你使用hexo搭建个人博客（二）</h1>
         
 
         <div class="post-meta">
@@ -315,7 +316,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-05T14:19:54+08:00">
                 2017-09-05
@@ -336,7 +337,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -364,7 +365,7 @@
 
           
               <div class="post-description">
-                  添加博客必要功能 置顶按钮，评论，换主题
+                  添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，添加搜索框，如何随时随地修改博客
               </div>
           
 
@@ -417,7 +418,7 @@
 &lt;a title=&quot;返回顶部&quot;&gt;&lt;img src=&quot;/images/scrollup.png&quot; width=&quot;50%&quot;/&gt;&lt;/a&gt;
 &lt;/div&gt;
 </code></pre><p>这里的img 图片路径 搞死我了 一开始是放在themes内的 发现’hexo g’编译后找不到，本地是可以跟踪到的, 后来发现编译后的图片路径是有改变的 至于改变到哪里具体要去看源码<br>所以类似这样公共图片的，简单粗暴的放在跟根目录下的images下。<br>4、将backtop的图片添加至根目录下的images下， 如图<br><img src="1.png" alt=""><br>5、 执行’hexo g’, 刷新页面即可</p>
-<h5 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a><b>更换主题</b></h5><p>找到你喜欢的主题git链接，如next的主题就是’<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next’， <a href="http://theme-next.iissnan.com/third-party-services.html" target="_blank" rel="external">nextAPI</a><br>打开GitBash 定位到随便一个目录。执行下面代码</p>
+<h5 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a><b>更换主题</b></h5><p>找到你喜欢的主题git链接，如next的主题就是’<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next’， <a href="http://fionat.github.io/2016/04/02/sitemap/" target="_blank" rel="external">nextAPI</a><br>打开GitBash 定位到随便一个目录。执行下面代码</p>
 <pre><code>git clone  https://github.com/iissnan/hexo-theme-next themes/next
 </code></pre><p>下载后 你会发现有个文件夹’themes’ 打开该文件夹，复制里面’next’的文件夹至本地hexo的’/themes’下，如图<br> <img src="2.png" alt=""><br>执行下面代码</p>
 <pre><code>hexo clean # 清除缓存
@@ -455,15 +456,20 @@ hexo d # 本地预览ok 就部署至gtihub
 本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; &amp;nbsp&amp;nbsp&amp;nbsp
 您是第&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;个来到的小伙伴
 </code></pre><p>如图：我是插在这里，位置看大家喜欢<br><img src="7.png" alt=""><br>单页访问量统计，后续更新…..</p>
-<h5 id="一起来提升访问量"><a href="#一起来提升访问量" class="headerlink" title="一起来提升访问量"></a><b>一起来提升访问量</b></h5><p>Sitemap 可方便管理员通知搜索引擎他们网站上有哪些可供抓取的网页，有助于让别人更好地通过搜索到自己的博客。<br>1、安装 Sitemap</p>
+<h5 id="一起来提升访问量"><a href="#一起来提升访问量" class="headerlink" title="一起来提升访问量"></a><b>一起来提升访问量</b></h5><p><b>google爬虫</b><br>Sitemap 可方便管理员通知搜索引擎他们网站上有哪些可供抓取的网页，有助于让别人更好地通过搜索到自己的博客。<br>1、安装 Sitemap</p>
 <pre><code>npm i hexo-generator-sitemap --save
 </code></pre><p>2、修改站点配置文件’_config.yml’，找到’plugins’属性,如图,<br>（一定要换行啊， 不要写成一行， 还有在站点配置中找到的’Plugins’是怎么写的你就直接去掉注释就好了 有可能会因为版本不同属性会变成 小写or大写） </p>
 <pre><code>Plugins: 
 - hexo-generator-sitemap
-</code></pre><p><img src="8.png" alt=""><br>3、 GitBash清缓存 编译</p>
+</code></pre><p><img src="8.png" alt=""><br>3、 打开GitBash 清缓存 编译</p>
 <pre><code>hexo clean
 hexo g
-</code></pre><p>4、执行以上命令后 你可以在public下找到文件’sitemap.xml’,这个文件就是你的站点地图，里面包含你的站点的网页地址,<br>提交sitemap到google,参考<a href="http://fionat.github.io/blog/2013/10/23/sitemap/" target="_blank" rel="external">如何向google提交sitemap</a></p>
+</code></pre><p>4、执行以上命令后 你可以在public下找到文件’sitemap.xml’,这个文件就是你的站点地图，里面包含你的站点的网页地址,<br>提交sitemap到google,参考<a href="http://fionat.github.io/blog/2013/10/23/sitemap/" target="_blank" rel="external">如何向google提交sitemap</a><br><b>百度爬虫</b><br>1、 安装百度sitemap</p>
+<pre><code>npm install hexo-generator-baidu-sitemap --save
+</code></pre><p>2、修改站点配置文件’_config.yml’，找到’plugins’属性,如图,<br><img src="9.png" alt="9"><br>3、 打开GitBash 清缓存 编译</p>
+<pre><code>hexo clean
+hexo g
+</code></pre><p>4、执行以上命令后 你可以在public下找到文件’baidusitemap.xml’,这个文件就是你的站点地图，里面包含你的站点的网页地址,把该文件提交给百度</p>
 <h5 id="热更新的尝试"><a href="#热更新的尝试" class="headerlink" title="热更新的尝试"></a><b>热更新的尝试</b></h5><h5 id="随时随地修改你的博客"><a href="#随时随地修改你的博客" class="headerlink" title="随时随地修改你的博客"></a><b>随时随地修改你的博客</b></h5>
       
     </div>
@@ -577,7 +583,7 @@ hexo g
               <a href="/archives">
             
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -588,7 +594,7 @@ hexo g
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">categories</span>
               
             </div>
           

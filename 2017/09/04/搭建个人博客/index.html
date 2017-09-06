@@ -98,7 +98,7 @@
 
 <meta name="description" content="简单搭建博客的环境和如何新建一个简单的文章和怎么部署到github">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20分钟教你使用hexo搭建个人博客（一）">
+<meta property="og:title" content="30分钟教你使用hexo搭建个人博客（一）">
 <meta property="og:url" content="http://yoursite.com/2017/09/04/搭建个人博客/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
 <meta property="og:description" content="简单搭建博客的环境和如何新建一个简单的文章和怎么部署到github">
@@ -119,9 +119,9 @@
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/11.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/10.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/路径">
-<meta property="og:updated_time" content="2017-09-05T10:16:22.464Z">
+<meta property="og:updated_time" content="2017-09-06T07:35:30.794Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20分钟教你使用hexo搭建个人博客（一）">
+<meta name="twitter:title" content="30分钟教你使用hexo搭建个人博客（一）">
 <meta name="twitter:description" content="简单搭建博客的环境和如何新建一个简单的文章和怎么部署到github">
 <meta name="twitter:image" content="http://yoursite.com/2017/09/04/搭建个人博客/node-v.png">
 
@@ -159,7 +159,7 @@
 
 
 
-  <title>20分钟教你使用hexo搭建个人博客（一） | Nina' blog</title>
+  <title>30分钟教你使用hexo搭建个人博客（一） | Nina' blog</title>
   
 
 
@@ -219,7 +219,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -239,7 +239,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -259,7 +259,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Über
+            About
           </a>
         </li>
       
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">20分钟教你使用hexo搭建个人博客（一）</h1>
+          <h1 class="post-title" itemprop="name headline">30分钟教你使用hexo搭建个人博客（一）</h1>
         
 
         <div class="post-meta">
@@ -323,7 +323,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-04T15:22:18+08:00">
                 2017-09-04
@@ -344,7 +344,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -389,7 +389,8 @@
       
 
       
-        <h5 id="hexo-和-jekyll-区别在哪里"><a href="#hexo-和-jekyll-区别在哪里" class="headerlink" title="hexo 和 jekyll 区别在哪里"></a><b>hexo 和 jekyll 区别在哪里</b></h5><p>hexo使用nodejs， jekyll使用Ruby 就是因为nodejs的安装和用nodejs编写的hexo安装步骤比ruby简单n倍， 并且速度也快n倍，就这么简单</p>
+        <h5 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h5><p>搭建博客需要先了解几个知识点<br>Git<br>GitHub<br>GitHub Pages<br>Hexo<br>Markdown</p>
+<h5 id="hexo-和-jekyll-区别在哪里"><a href="#hexo-和-jekyll-区别在哪里" class="headerlink" title="hexo 和 jekyll 区别在哪里"></a><b>hexo 和 jekyll 区别在哪里</b></h5><p>hexo使用nodejs， jekyll使用Ruby 就是因为nodejs的安装和用nodejs编写的hexo安装步骤比ruby简单n倍， 并且速度也快n倍，就这么简单</p>
 <h5 id="安装hexo本地环境"><a href="#安装hexo本地环境" class="headerlink" title="安装hexo本地环境"></a><b>安装hexo本地环境</b><a id="more"></a></h5><h6 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h6><p>下载nodejs <a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">https://nodejs.org/zh-cn/</a><br>打开msi文件 一直下一步安装ok后，检测PATH环境变量是否配置了Node.js，点击开始=》运行=》输入”cmd” =&gt; 输入命令”path”，输出如下结果：</p>
 <pre><code>PATH=C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;
 C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;
@@ -444,7 +445,7 @@ categories: 动画
 </code></pre></li>
 </ul>
 <p>或者可以直接在scaffolds/post.md 下添加’categories’属性 这样new之后的默认页面都会有这个属性</p>
-<h5 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a><b>插入图片</b></h5><p>有三种方式可以插入图片<br>1、将本地图片放置在根目录下的source/images, 没有images就自己创建文件夹，<br>            <img src="/images/image.jpg" alt=""> # [xxx] 这里输入文字 会显示在图片下方 表示图片标题<br>刷新本地页面直接可以看到 如图<br><img src="11.png" alt=""><br>2、 将本地图片放置在下图的对应文件夹处, 需要’hexo g’ 编译后图片才能查看 否则无法查看<br>        <img src="11.png" alt=""> # 这里的路径直接相对路径就好 11.png对应文件名称<br>如图<br><img src="10.png" alt=""><br>3、将图片上传到cdn域名将生成的url添加在文章即可</p>
+<h5 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a><b>插入图片</b></h5><p>有三种方式可以插入图片<br>1、将本地图片放置在根目录下的source/images, 没有images就自己创建文件夹，<br>            <img src="/images/image.jpg" alt=""> # [xxx] 这里输入文字 表示图片的alt属性不过旧版本的主题可能就会表示图片下方的标题（亲测）<br>刷新本地页面直接可以看到 如图<br><img src="11.png" alt=""><br>2、 将本地图片放置在下图的对应文件夹处, 需要’hexo g’ 编译后图片才能查看 否则无法查看<br>        <img src="11.png" alt=""> # 这里的路径直接相对路径就好 11.png对应文件名称<br>如图<br><img src="10.png" alt=""><br>3、将图片上传到cdn域名将生成的url添加在文章即可</p>
 <ul>
 <li>以上插入图片除了可以通过markdown的引用方式之外 还可以直接<img src="路径"><br>以上内容是简单搭建博客 编写文章的步骤，如果想更多操作请查看<br><a href="/2017/09/05/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89/">搭建个人博客（二）</a></li>
 </ul>
@@ -565,7 +566,7 @@ categories: 动画
               <a href="/archives">
             
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -576,7 +577,7 @@ categories: 动画
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">categories</span>
               
             </div>
           
@@ -612,7 +613,7 @@ categories: 动画
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo-和-jekyll-区别在哪里"><span class="nav-number">1.</span> <span class="nav-text">hexo 和 jekyll 区别在哪里</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装hexo本地环境"><span class="nav-number">2.</span> <span class="nav-text">安装hexo本地环境</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#安装nodejs"><span class="nav-number">2.1.</span> <span class="nav-text">安装nodejs</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装npm"><span class="nav-number">2.2.</span> <span class="nav-text">安装npm</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装本地hexo"><span class="nav-number">2.3.</span> <span class="nav-text">安装本地hexo</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署github-pages"><span class="nav-number">3.</span> <span class="nav-text">部署github pages</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#github-pages结合hexo"><span class="nav-number">4.</span> <span class="nav-text">github pages结合hexo</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo新建导航"><span class="nav-number">5.</span> <span class="nav-text">hexo新建导航</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#新建文件"><span class="nav-number">6.</span> <span class="nav-text">新建文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#插入图片"><span class="nav-number">7.</span> <span class="nav-text">插入图片</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo-和-jekyll-区别在哪里"><span class="nav-number">2.</span> <span class="nav-text">hexo 和 jekyll 区别在哪里</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装hexo本地环境"><span class="nav-number">3.</span> <span class="nav-text">安装hexo本地环境</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#安装nodejs"><span class="nav-number">3.1.</span> <span class="nav-text">安装nodejs</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装npm"><span class="nav-number">3.2.</span> <span class="nav-text">安装npm</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#安装本地hexo"><span class="nav-number">3.3.</span> <span class="nav-text">安装本地hexo</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署github-pages"><span class="nav-number">4.</span> <span class="nav-text">部署github pages</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#github-pages结合hexo"><span class="nav-number">5.</span> <span class="nav-text">github pages结合hexo</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo新建导航"><span class="nav-number">6.</span> <span class="nav-text">hexo新建导航</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#新建文件"><span class="nav-number">7.</span> <span class="nav-text">新建文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#插入图片"><span class="nav-number">8.</span> <span class="nav-text">插入图片</span></a></li></ol></div>
             
 
           </div>
