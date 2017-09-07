@@ -105,9 +105,11 @@
 <meta property="og:description" content="添加搜索框，404页面优化，部署后为何语言显示不正确, 打赏">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/4.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/5.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/6.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/2.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/3.png">
-<meta property="og:updated_time" content="2017-09-07T09:00:40.465Z">
+<meta property="og:updated_time" content="2017-09-07T09:06:08.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30分钟教你使用hexo搭建个人博客（三）">
 <meta name="twitter:description" content="添加搜索框，404页面优化，部署后为何语言显示不正确, 打赏">
@@ -419,9 +421,8 @@
     field: post
     format: html
     limit: 10000
-</code></pre><p>3、找到主题配置文件 修改如下，设置为’true’就好, 其他不用修改<br><img src="4.png" alt="4"><br>4、然后在 themes/next/layout/_partials/search 目录下修改 localsearch.swig 文件。<br>原始文件内容如下：</p>
-<pre><code>居然没效果 哈哈哈 待续。。。最近有点忙 在学习移动端的东西 后续有时间再来纠结
-</code></pre><h5 id="404页面优化"><a href="#404页面优化" class="headerlink" title="404页面优化"></a>404页面优化</h5><p>下面来讲解我设置404页面遇到的错误，我不是在主题下面新建404页面的。操作如下<br>        hexo n 404 # 执行后会在根目录下，名字一定要是404<br>生成如图<br><img src="2.png" alt="2"><br>把以下代码加入在index.md文件即可,next官網的代碼有些問題的這個部分 search_children.js的地址千萬不要加上http ，因爲github是https，http開頭的js文件會被block掉的</p>
+</code></pre><p>3、找到主题配置文件 修改如下，设置为’true’就好, 其他不用修改<br><img src="4.png" alt="4">：<br>4、创建分类search 找到主题配置文件设置search的路径如下<br><img src="5.png" alt="5"><br>5、部署上线后效果如下<br><img src="6.png" alt="6"><br>其实这里，通过跳转链接弹出页面才可以搜索，有些对不起我的内心，后续会把它做成在页面直接input搜索的，待续。。。最近有点忙 工作需要学习移动端的知识 有时间再来纠结</p>
+<h5 id="404页面优化"><a href="#404页面优化" class="headerlink" title="404页面优化"></a>404页面优化</h5><p>下面来讲解我设置404页面遇到的错误，我不是在主题下面新建404页面的。操作如下<br>        hexo n 404 # 执行后会在根目录下，名字一定要是404<br>生成如图<br><img src="2.png" alt="2"><br>把以下代码加入在index.md文件即可,next官網的代碼有些問題的這個部分 search_children.js的地址千萬不要加上http ，因爲github是https，http開頭的js文件會被block掉的</p>
 <pre><code>---
 title: 404 Not Found：该页无法显示
 date: 2017-09-04 17:38:32
