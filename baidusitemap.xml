@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/09/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
+    <lastmod>2017-09-07T08:54:51.256Z</lastmod>
+    <data>
+        <display>
+        <title>30分钟教你使用hexo搭建个人博客（三）</title>
+        <pubTime>2017-09-07T01:37:58.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="搭建个人博客" url="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/09/05/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     <lastmod>2017-09-07T08:13:20.403Z</lastmod>
     <data>
@@ -17,24 +35,6 @@
          
         <tag>livereload</tag>
          
-         
-           
-             
-              <breadCrumb title="搭建个人博客" url="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/09/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
-    <lastmod>2017-09-07T08:04:28.883Z</lastmod>
-    <data>
-        <display>
-        <title>30分钟教你使用hexo搭建个人博客（三）</title>
-        <pubTime>2017-09-07T01:37:58.000Z</pubTime>
-        
          
            
              

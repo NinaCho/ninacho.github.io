@@ -97,20 +97,20 @@
 
 
 
-<meta name="description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确">
+<meta name="description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏">
 <meta property="og:type" content="article">
 <meta property="og:title" content="30分钟教你使用hexo搭建个人博客（三）">
 <meta property="og:url" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
-<meta property="og:description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确">
+<meta property="og:description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/4.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/2.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/3.png">
-<meta property="og:updated_time" content="2017-09-07T08:04:28.883Z">
+<meta property="og:updated_time" content="2017-09-07T08:54:51.256Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30分钟教你使用hexo搭建个人博客（三）">
-<meta name="twitter:description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确">
+<meta name="twitter:description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏">
 <meta name="twitter:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/4.png">
 
 
@@ -182,7 +182,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">A small step today is a big step tomorrow</p>
+        <h1 class="site-subtitle" itemprop="description">A small step today is a big step tomorrow</h1>
       
   </div>
 
@@ -233,9 +233,9 @@
       
         
         <li class="menu-item menu-item-serach">
-          <a href="/" rel="section">
+          <a href="/search/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-search"></i> <br />
             
             serach
           </a>
@@ -270,23 +270,12 @@
   
     <div class="site-search">
       
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input" placeholder="search my blog...">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
 </div>
-
 
 
     </div>
@@ -335,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">30分钟教你使用hexo搭建个人博客（三）</h1>
+          <h2 class="post-title" itemprop="name headline">30分钟教你使用hexo搭建个人博客（三）</h2>
         
 
         <div class="post-meta">
@@ -394,7 +383,7 @@
 
           
               <div class="post-description">
-                  添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确
+                  添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏
               </div>
           
 
@@ -420,15 +409,8 @@
     format: html
     limit: 10000
 </code></pre><p>3、找到主题配置文件 修改如下，设置为’true’就好, 其他不用修改<br><img src="4.png" alt="4"><br>4、然后在 themes/next/layout/_partials/search 目录下修改 localsearch.swig 文件。<br>原始文件内容如下：</p>
-<pre><code> &lt;script type=&quot;text/javascript&quot;&gt;
-var search_path = &quot;&lt;%= config.search.path %&gt;&quot;;
-if (search_path.length == 0) {
-    search_path = &quot;search.xml&quot;;
-}
-var path = &quot;&lt;%= config.root %&gt;&quot; + search_path;
-searchFunc(path, &apos;local-search-input&apos;, &apos;local-search-result&apos;);
-</code></pre><p> </p>
-<h5 id="丰富侧边栏"><a href="#丰富侧边栏" class="headerlink" title="丰富侧边栏"></a>丰富侧边栏</h5><p>侧边栏可以参照<a href="http://theme-next.iissnan.com/theme-settings.html#rss" target="_blank" rel="external">侧边栏API</a><br>下面我来说说api没有的操作，</p>
+<pre><code>居然没效果 哈哈哈
+</code></pre><h5 id="丰富侧边栏"><a href="#丰富侧边栏" class="headerlink" title="丰富侧边栏"></a>丰富侧边栏</h5><p>侧边栏可以参照<a href="http://theme-next.iissnan.com/theme-settings.html#rss" target="_blank" rel="external">侧边栏API</a><br>下面我来说说api没有的操作，</p>
 <h5 id="404页面优化"><a href="#404页面优化" class="headerlink" title="404页面优化"></a>404页面优化</h5><p>下面来讲解我设置404页面遇到的错误，我不是在主题下面新建404页面的。操作如下<br>        hexo n 404 # 执行后会在根目录下，名字一定要是404<br>生成如图<br><img src="2.png" alt="2"><br>把以下代码加入在index.md文件即可,next官網的代碼有些問題的這個部分 search_children.js的地址千萬不要加上http ，因爲github是https，http開頭的js文件會被block掉的</p>
 <pre><code>---
 title: 404 Not Found：该页无法显示
@@ -449,7 +431,7 @@ permalink: /404
 &lt;/html&gt;
 </code></pre><h5 id="部署后为何语言显示不正确？"><a href="#部署后为何语言显示不正确？" class="headerlink" title="部署后为何语言显示不正确？"></a>部署后为何语言显示不正确？</h5><p>部署后的语言居然是不知道哪国的翻译，好无语，如图<br><img src="3.png" alt="3"><br>下面一起来看下到底是什么原因吧<br>若没有设定 language 的值或者 language: default或者language: chinese，会出现语言选择不正确的情况。 因此为了确保语言正确显示，<br>请明确指定需要使用的语言。 编辑 站点配置文件， 将 language 字段设置成明确的语言代码。 例如，设置语言为简体中文：（这句话实在<a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="external">官网</a>找到的）</p>
 <pre><code>language: zh-Hans #具体的属性设置建议看官网,有可能会因为版本不同而有修改
-</code></pre><h5 id="結束語"><a href="#結束語" class="headerlink" title="結束語"></a>結束語</h5><p>写了三大篇文章呕心沥血呀，毕竟还是走了挺多小坑的，终于可以愉快的写博客了，开心开心。。</p>
+</code></pre><h5 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h5><h5 id="結束語"><a href="#結束語" class="headerlink" title="結束語"></a>結束語</h5><p>写了三大篇文章呕心沥血呀，毕竟还是走了挺多小坑的，终于可以愉快的写博客了，开心开心。。</p>
 
       
     </div>
@@ -627,7 +609,7 @@ permalink: /404
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#丰富侧边栏"><span class="nav-number">2.</span> <span class="nav-text">丰富侧边栏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">3.</span> <span class="nav-text">404页面优化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署后为何语言显示不正确？"><span class="nav-number">4.</span> <span class="nav-text">部署后为何语言显示不正确？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#結束語"><span class="nav-number">5.</span> <span class="nav-text">結束語</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#丰富侧边栏"><span class="nav-number">2.</span> <span class="nav-text">丰富侧边栏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">3.</span> <span class="nav-text">404页面优化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署后为何语言显示不正确？"><span class="nav-number">4.</span> <span class="nav-text">部署后为何语言显示不正确？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#打赏"><span class="nav-number">5.</span> <span class="nav-text">打赏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#結束語"><span class="nav-number">6.</span> <span class="nav-text">結束語</span></a></li></ol></div>
             
 
           </div>
