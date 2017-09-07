@@ -105,8 +105,7 @@
 <meta property="og:description" content="添加搜索框，丰富侧边栏，404页面优化">
 <meta property="og:locale" content="chinese">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/2.png">
-<meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/1.png">
-<meta property="og:updated_time" content="2017-09-07T06:36:09.170Z">
+<meta property="og:updated_time" content="2017-09-07T06:55:18.933Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建个人博客（三）">
 <meta name="twitter:description" content="添加搜索框，丰富侧边栏，404页面优化">
@@ -206,7 +205,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Accueil
+            Startseite
           </a>
         </li>
       
@@ -226,7 +225,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Categories
+            Kategorien
           </a>
         </li>
       
@@ -246,7 +245,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            A propos
+            Über
           </a>
         </li>
       
@@ -310,7 +309,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posté le</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-07T09:37:58+08:00">
                 2017-09-07
@@ -331,7 +330,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">in</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -382,29 +381,21 @@
 title: 404 Not Found：该页无法显示
 date: 2017-09-04 17:38:32
 toc: false
-comments: false # 设置为false 禁止评论
-permalink: /404 #记得设置哦
+comments: false
+permalink: /404
 ---
-&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8;&quot;/&gt;
-&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
-&lt;meta name=&quot;robots&quot; content=&quot;all&quot; /&gt;
-&lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://qzone.qq.com/gy/404/style/404style.css&quot;&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;upgrade-insecure-requests&quot;&gt;
+    &lt;title&gt;404&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;script type=&quot;text/plain&quot; src=&quot;http://www.qq.com/404/search_children.js&quot;
-        charset=&quot;utf-8&quot; homePageUrl=&quot;/&quot;
-        homePageName=&quot;回到我的主页&quot;&gt;
-&lt;/script&gt;
-&lt;script src=&quot;https://qzone.qq.com/gy/404/data.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://qzone.qq.com/gy/404/page.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot; charset=&quot;utf-8&quot; homePageUrl=&quot;/&quot; homePageName=&quot;回到我的主页&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p>设置后本地预览在其他页面我预览是ok的，部署上去后样式错乱了 啥回事呢，看了conlog才知道思https的问题<br>如图：<br><img src="1.png" alt="1"><br>原因是：HTTPS页面里动态的引入HTTP资源，比如引入一个js文件，会被直接block掉的.在HTTPS页面里通过AJAX的方式请求HTTP资源，也会被直接block掉的。哈哈哈哈</p>
-
+</code></pre>
       
     </div>
     
@@ -490,10 +481,10 @@ permalink: /404 #记得设置哦
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table Des Matières
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Ensemble
+            Overview
           </li>
         </ul>
       
@@ -517,7 +508,7 @@ permalink: /404 #记得设置哦
               <a href="/archives">
             
                 <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">articles</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -528,7 +519,7 @@ permalink: /404 #记得设置哦
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">categories</span>
+                <span class="site-state-item-name">Kategorien</span>
               
             </div>
           
@@ -539,7 +530,7 @@ permalink: /404 #记得设置哦
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">Tags</span>
               
             </div>
           
