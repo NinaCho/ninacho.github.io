@@ -263,12 +263,23 @@
   
     <div class="site-search">
       
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input" placeholder="search my blog...">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
 </div>
+
 
 
     </div>
@@ -392,7 +403,7 @@
 
       
         
-          添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏
+          添加搜索框，404页面优化，部署后为何语言显示不正确, 打赏
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/09/07/搭建个人博客（三）/">

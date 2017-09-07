@@ -97,20 +97,20 @@
 
 
 
-<meta name="description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏">
+<meta name="description" content="添加搜索框，404页面优化，部署后为何语言显示不正确, 打赏">
 <meta property="og:type" content="article">
 <meta property="og:title" content="30分钟教你使用hexo搭建个人博客（三）">
 <meta property="og:url" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
-<meta property="og:description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏">
+<meta property="og:description" content="添加搜索框，404页面优化，部署后为何语言显示不正确, 打赏">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/4.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/2.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/3.png">
-<meta property="og:updated_time" content="2017-09-07T08:54:51.256Z">
+<meta property="og:updated_time" content="2017-09-07T09:00:40.465Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30分钟教你使用hexo搭建个人博客（三）">
-<meta name="twitter:description" content="添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏">
+<meta name="twitter:description" content="添加搜索框，404页面优化，部署后为何语言显示不正确, 打赏">
 <meta name="twitter:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/4.png">
 
 
@@ -270,12 +270,23 @@
   
     <div class="site-search">
       
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input" placeholder="search my blog...">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
 </div>
+
 
 
     </div>
@@ -383,7 +394,7 @@
 
           
               <div class="post-description">
-                  添加搜索框，丰富侧边栏，404页面优化，部署后为何语言显示不正确, 打赏
+                  添加搜索框，404页面优化，部署后为何语言显示不正确, 打赏
               </div>
           
 
@@ -409,9 +420,8 @@
     format: html
     limit: 10000
 </code></pre><p>3、找到主题配置文件 修改如下，设置为’true’就好, 其他不用修改<br><img src="4.png" alt="4"><br>4、然后在 themes/next/layout/_partials/search 目录下修改 localsearch.swig 文件。<br>原始文件内容如下：</p>
-<pre><code>居然没效果 哈哈哈
-</code></pre><h5 id="丰富侧边栏"><a href="#丰富侧边栏" class="headerlink" title="丰富侧边栏"></a>丰富侧边栏</h5><p>侧边栏可以参照<a href="http://theme-next.iissnan.com/theme-settings.html#rss" target="_blank" rel="external">侧边栏API</a><br>下面我来说说api没有的操作，</p>
-<h5 id="404页面优化"><a href="#404页面优化" class="headerlink" title="404页面优化"></a>404页面优化</h5><p>下面来讲解我设置404页面遇到的错误，我不是在主题下面新建404页面的。操作如下<br>        hexo n 404 # 执行后会在根目录下，名字一定要是404<br>生成如图<br><img src="2.png" alt="2"><br>把以下代码加入在index.md文件即可,next官網的代碼有些問題的這個部分 search_children.js的地址千萬不要加上http ，因爲github是https，http開頭的js文件會被block掉的</p>
+<pre><code>居然没效果 哈哈哈 待续。。。最近有点忙 在学习移动端的东西 后续有时间再来纠结
+</code></pre><h5 id="404页面优化"><a href="#404页面优化" class="headerlink" title="404页面优化"></a>404页面优化</h5><p>下面来讲解我设置404页面遇到的错误，我不是在主题下面新建404页面的。操作如下<br>        hexo n 404 # 执行后会在根目录下，名字一定要是404<br>生成如图<br><img src="2.png" alt="2"><br>把以下代码加入在index.md文件即可,next官網的代碼有些問題的這個部分 search_children.js的地址千萬不要加上http ，因爲github是https，http開頭的js文件會被block掉的</p>
 <pre><code>---
 title: 404 Not Found：该页无法显示
 date: 2017-09-04 17:38:32
@@ -609,7 +619,7 @@ permalink: /404
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#丰富侧边栏"><span class="nav-number">2.</span> <span class="nav-text">丰富侧边栏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">3.</span> <span class="nav-text">404页面优化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署后为何语言显示不正确？"><span class="nav-number">4.</span> <span class="nav-text">部署后为何语言显示不正确？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#打赏"><span class="nav-number">5.</span> <span class="nav-text">打赏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#結束語"><span class="nav-number">6.</span> <span class="nav-text">結束語</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">2.</span> <span class="nav-text">404页面优化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署后为何语言显示不正确？"><span class="nav-number">3.</span> <span class="nav-text">部署后为何语言显示不正确？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#打赏"><span class="nav-number">4.</span> <span class="nav-text">打赏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#結束語"><span class="nav-number">5.</span> <span class="nav-text">結束語</span></a></li></ol></div>
             
 
           </div>
