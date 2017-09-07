@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo,githubPages," />
 
 
 
@@ -98,6 +98,7 @@
 
 
 <meta name="description" content="简单搭建博客的环境和如何新建一个简单的文章和怎么部署到github">
+<meta name="keywords" content="hexo,githubPages">
 <meta property="og:type" content="article">
 <meta property="og:title" content="30分钟教你使用hexo搭建个人博客（一）">
 <meta property="og:url" content="http://yoursite.com/2017/09/04/搭建个人博客/index.html">
@@ -119,8 +120,7 @@
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/11.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/11.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/10.png">
-<meta property="og:image" content="http://yoursite.com/2017/09/04/搭建个人博客/路径">
-<meta property="og:updated_time" content="2017-09-06T07:35:30.794Z">
+<meta property="og:updated_time" content="2017-09-07T01:46:54.094Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30分钟教你使用hexo搭建个人博客（一）">
 <meta name="twitter:description" content="简单搭建博客的环境和如何新建一个简单的文章和怎么部署到github">
@@ -220,7 +220,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -240,7 +240,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Categories
+            Kategorien
           </a>
         </li>
       
@@ -260,7 +260,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            About
+            Über
           </a>
         </li>
       
@@ -324,7 +324,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-04T15:22:18+08:00">
                 2017-09-04
@@ -345,7 +345,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">in</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -446,10 +446,9 @@ categories: 动画
 </code></pre></li>
 </ul>
 <p>或者可以直接在scaffolds/post.md 下添加’categories’属性 这样new之后的默认页面都会有这个属性</p>
-<h5 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a><b>插入图片</b></h5><p>有三种方式可以插入图片<br>1、将本地图片放置在根目录下的source/images, 没有images就自己创建文件夹，<br>            <img src="/images/image.jpg" alt=""> # [xxx] 这里输入文字 表示图片的alt属性不过旧版本的主题可能就会表示图片下方的标题（亲测）<br>刷新本地页面直接可以看到 如图<br><img src="11.png" alt=""><br>2、 将本地图片放置在下图的对应文件夹处, 需要’hexo g’ 编译后图片才能查看 否则无法查看<br>        <img src="11.png" alt=""> # 这里的路径直接相对路径就好 11.png对应文件名称<br>如图<br><img src="10.png" alt=""><br>3、将图片上传到cdn域名将生成的url添加在文章即可</p>
-<ul>
-<li>以上插入图片除了可以通过markdown的引用方式之外 还可以直接<img src="路径"><br>以上内容是简单搭建博客 编写文章的步骤，如果想更多操作请查看<br><a href="/2017/09/05/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89/">搭建个人博客（二）</a></li>
-</ul>
+<h5 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a><b>插入图片</b></h5><p>有三种方式可以插入图片<br>1、将本地图片放置在根目录下的source/images, 没有images就自己创建文件夹，<br>            <img src="/images/image.jpg" alt=""> # [xxx] 这里输入文字 表示图片的alt属性不过旧版本的主题可能就会表示图片下方的标题（亲测）<br>刷新本地页面直接可以看到 如图<br><img src="11.png" alt=""><br>2、 将本地图片放置在下图的对应文件夹处, 需要’hexo g’ 编译后图片才能查看 否则无法查看<br>        <img src="11.png" alt=""> # 这里的路径直接相对路径就好 11.png对应文件名称<br>如图<br><img src="10.png" alt=""><br>3、将图片上传到cdn域名将生成的url添加在文章即可<br>以上插入图片除了可以通过markdown的引用方式之外 还可以直接</p>
+<pre><code>&lt;img src=&quot;路径&quot;/&gt;
+</code></pre><p>以上内容是简单搭建博客 编写文章的步骤，如果想更多操作请查看<br><a href="/2017/09/05/搭建个人博客（二）/">搭建个人博客（二）</a></p>
 
       
     </div>
@@ -464,6 +463,14 @@ categories: 动画
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/githubPages/" rel="tag"># githubPages</a>
+          
+        </div>
       
 
       
@@ -566,8 +573,8 @@ categories: 动画
             
               <a href="/archives">
             
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -578,11 +585,20 @@ categories: 动画
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">categories</span>
+                <span class="site-state-item-name">Kategorien</span>
               
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
           
 
         </nav>
@@ -590,6 +606,14 @@ categories: 动画
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/NinaCho" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>GitHub</a>
+              </span>
+            
           
         </div>
 
@@ -697,6 +721,8 @@ categories: 动画
   
 
 
+  
+
 
 
 
@@ -724,6 +750,9 @@ categories: 动画
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   

@@ -97,14 +97,17 @@
 
 
 
+<meta name="description" content="添加搜索框，丰富侧边栏，404页面优化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="动画">
-<meta property="og:url" content="http://yoursite.com/2017/09/01/动画/index.html">
+<meta property="og:title" content="搭建个人博客（三）">
+<meta property="og:url" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
+<meta property="og:description" content="添加搜索框，丰富侧边栏，404页面优化">
 <meta property="og:locale" content="chinese">
-<meta property="og:updated_time" content="2017-09-05T05:51:35.096Z">
+<meta property="og:updated_time" content="2017-09-07T05:59:22.562Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="动画">
+<meta name="twitter:title" content="搭建个人博客（三）">
+<meta name="twitter:description" content="添加搜索框，丰富侧边栏，404页面优化">
 
 
 
@@ -134,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/01/动画/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/07/搭建个人博客（三）/"/>
 
 
 
 
 
-  <title>动画 | Nina' blog</title>
+  <title>搭建个人博客（三） | Nina' blog</title>
   
 
 
@@ -277,7 +280,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/01/动画/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/07/搭建个人博客（三）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Nina Cho">
@@ -294,7 +297,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">动画</h1>
+          <h1 class="post-title" itemprop="name headline">搭建个人博客（三）</h1>
         
 
         <div class="post-meta">
@@ -306,8 +309,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-01T10:26:37+08:00">
-                2017-09-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-07T09:37:58+08:00">
+                2017-09-07
               </time>
             
 
@@ -329,8 +332,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/动画/" itemprop="url" rel="index">
-                    <span itemprop="name">动画</span>
+                  <a href="/categories/搭建个人博客/" itemprop="url" rel="index">
+                    <span itemprop="name">搭建个人博客</span>
                   </a>
                 </span>
 
@@ -352,6 +355,10 @@
           
 
           
+              <div class="post-description">
+                  添加搜索框，丰富侧边栏，404页面优化
+              </div>
+          
 
         </div>
       </header>
@@ -366,7 +373,9 @@
       
 
       
-        
+        <h5 id="添加搜索框"><a href="#添加搜索框" class="headerlink" title="添加搜索框"></a>添加搜索框</h5><h5 id="丰富侧边栏"><a href="#丰富侧边栏" class="headerlink" title="丰富侧边栏"></a>丰富侧边栏</h5><p>侧边栏可以参照<a href="http://theme-next.iissnan.com/theme-settings.html#rss" target="_blank" rel="external">侧边栏API</a><br>下面我来说说api没有的操作，</p>
+<h5 id="404页面优化"><a href="#404页面优化" class="headerlink" title="404页面优化"></a>404页面优化</h5><p>下面来讲解怎么把错误页面装换404页面</p>
+
       
     </div>
     
@@ -390,15 +399,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/09/05/搭建个人博客（二）/" rel="next" title="30分钟教你使用hexo搭建个人博客（二）">
+                <i class="fa fa-chevron-left"></i> 30分钟教你使用hexo搭建个人博客（二）
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/04/微信小程序/" rel="prev" title="微信小程序">
-                微信小程序 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -450,8 +459,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -524,6 +542,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#丰富侧边栏"><span class="nav-number">2.</span> <span class="nav-text">丰富侧边栏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">3.</span> <span class="nav-text">404页面优化</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

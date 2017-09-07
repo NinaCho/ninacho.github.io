@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo,sitemap,livereload," />
 
 
 
@@ -97,12 +97,13 @@
 
 
 
-<meta name="description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，添加搜索框，如何随时随地修改博客">
+<meta name="description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
+<meta name="keywords" content="hexo,sitemap,livereload">
 <meta property="og:type" content="article">
 <meta property="og:title" content="30分钟教你使用hexo搭建个人博客（二）">
 <meta property="og:url" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
-<meta property="og:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，添加搜索框，如何随时随地修改博客">
+<meta property="og:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
 <meta property="og:locale" content="chinese">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/1.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/2.png">
@@ -123,10 +124,10 @@
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/16.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/18.png">
 <meta property="og:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/19.png">
-<meta property="og:updated_time" content="2017-09-06T09:04:21.897Z">
+<meta property="og:updated_time" content="2017-09-07T03:00:32.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30分钟教你使用hexo搭建个人博客（二）">
-<meta name="twitter:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，添加搜索框，如何随时随地修改博客">
+<meta name="twitter:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
 <meta name="twitter:image" content="http://yoursite.com/2017/09/05/搭建个人博客（二）/1.png">
 
 
@@ -223,7 +224,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -243,7 +244,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Categories
+            Kategorien
           </a>
         </li>
       
@@ -263,7 +264,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            About
+            Über
           </a>
         </li>
       
@@ -327,7 +328,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-05T14:19:54+08:00">
                 2017-09-05
@@ -348,7 +349,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">in</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -376,7 +377,7 @@
 
           
               <div class="post-description">
-                  添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，添加搜索框，如何随时随地修改博客
+                  添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客
               </div>
           
 
@@ -393,7 +394,7 @@
       
 
       
-        <h5 id="添加置顶按钮"><a href="#添加置顶按钮" class="headerlink" title="添加置顶按钮 "></a><b>添加置顶按钮</b> <a id="more"></a></h5><pre><code>1、找到&apos;themes/landscape/source/js&apos; 创建文件&apos;totop.js&apos;, 将以下代码粘贴至该文件
+        <h5 id="添加置顶按钮"><a href="#添加置顶按钮" class="headerlink" title="添加置顶按钮"></a><b>添加置顶按钮</b></h5><pre><code>1、找到&apos;themes/landscape/source/js&apos; 创建文件&apos;totop.js&apos;, 将以下代码粘贴至该文件
         (function($) {
             // When to show the scroll link
             // higher number = scroll link appears further down the page
@@ -484,7 +485,8 @@ hexo g
 <h5 id="自动刷新的尝试"><a href="#自动刷新的尝试" class="headerlink" title="自动刷新的尝试"></a><b>自动刷新的尝试</b></h5><p>每次修改博客 都要手动刷新才能看到效果，对这么懒的我来说实在不方便，所以下面研究下hexo如何设置自动刷新<br>我用的是nodejs的livereload，如果你想使用next内置的livereload就去看<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="external">nextApi</a>吧<br>下面一起来配置吧<br>1、打开bash 输入以下代码</p>
 <pre><code>npm install hexo-livereload --save -g
 </code></pre><p>2、打开浏览器添加插件livereload<br>3、创建脚本，在hexo blog的根目录上创建server.sh，如图（当然你也可以不创建脚本直接执行下面代码，你喜欢咯）<br><img src="18.png" alt="18"><br>4、将以下代码复制在server.sh内，注意文件格式要是utf-8的哦<br>        livereload -e “.md, .html, .png, .svg, .jpg, .gif, .css, .js, .json” | hexo server<br>5、打开bash 去到hexo blog的根目录 输入如下<br>    ./server.sh # 回车<br>6、打开页面,打开右上角的livereload设置，设置livereload开启状态，就会如下图所示，中间小圆点变实心，略等几秒就会实时刷新，完美<br><img src="19.png" alt="19"></p>
-<h5 id="随时随地修改你的博客"><a href="#随时随地修改你的博客" class="headerlink" title="随时随地修改你的博客"></a><b>随时随地修改你的博客</b></h5>
+<h5 id="随时随地修改你的博客"><a href="#随时随地修改你的博客" class="headerlink" title="随时随地修改你的博客"></a><b>随时随地修改你的博客</b></h5><p>以上内容是让你的博客更加丰富的步骤，如果想更多操作请查看<br><a href="/2017/09/07/搭建个人博客（三）/">搭建个人博客（三）</a></p>
+
       
     </div>
     
@@ -498,6 +500,16 @@ hexo g
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/sitemap/" rel="tag"># sitemap</a>
+          
+            <a href="/tags/livereload/" rel="tag"># livereload</a>
+          
+        </div>
       
 
       
@@ -517,6 +529,10 @@ hexo g
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/07/搭建个人博客（三）/" rel="prev" title="搭建个人博客（三）">
+                搭建个人博客（三） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -596,8 +612,8 @@ hexo g
             
               <a href="/archives">
             
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -608,11 +624,20 @@ hexo g
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">categories</span>
+                <span class="site-state-item-name">Kategorien</span>
               
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
           
 
         </nav>
@@ -620,6 +645,14 @@ hexo g
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/NinaCho" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>GitHub</a>
+              </span>
+            
           
         </div>
 
@@ -644,7 +677,7 @@ hexo g
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加置顶按钮"><span class="nav-number">1.</span> <span class="nav-text">添加置顶按钮 </span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#更换主题"><span class="nav-number">2.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加评论功能-待续……"><span class="nav-number">3.</span> <span class="nav-text">添加评论功能 待续……</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#添加友言版的评论功能"><span class="nav-number">3.1.</span> <span class="nav-text">添加友言版的评论功能</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加头像"><span class="nav-number">4.</span> <span class="nav-text">添加头像</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#统计访问量"><span class="nav-number">5.</span> <span class="nav-text">统计访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一起来提升访问量"><span class="nav-number">6.</span> <span class="nav-text">一起来提升访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自动刷新的尝试"><span class="nav-number">7.</span> <span class="nav-text">自动刷新的尝试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#随时随地修改你的博客"><span class="nav-number">8.</span> <span class="nav-text">随时随地修改你的博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加置顶按钮"><span class="nav-number">1.</span> <span class="nav-text">添加置顶按钮</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#更换主题"><span class="nav-number">2.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加评论功能-待续……"><span class="nav-number">3.</span> <span class="nav-text">添加评论功能 待续……</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#添加友言版的评论功能"><span class="nav-number">3.1.</span> <span class="nav-text">添加友言版的评论功能</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加头像"><span class="nav-number">4.</span> <span class="nav-text">添加头像</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#统计访问量"><span class="nav-number">5.</span> <span class="nav-text">统计访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一起来提升访问量"><span class="nav-number">6.</span> <span class="nav-text">一起来提升访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自动刷新的尝试"><span class="nav-number">7.</span> <span class="nav-text">自动刷新的尝试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#随时随地修改你的博客"><span class="nav-number">8.</span> <span class="nav-text">随时随地修改你的博客</span></a></li></ol></div>
             
 
           </div>
@@ -727,6 +760,8 @@ hexo g
   
 
 
+  
+
 
 
 
@@ -754,6 +789,9 @@ hexo g
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
