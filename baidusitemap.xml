@@ -3,6 +3,21 @@
 
 
     
+  <url>
+    <loc>http://yoursite.com/2017/09/04/github%E9%83%A8%E7%BD%B2%E9%A2%84%E8%A7%88%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2017-09-07T06:14:41.733Z</lastmod>
+    <data>
+        <display>
+        <title>github部署预览项目</title>
+        <pubTime>2017-09-04T09:38:32.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://yoursite.com/2017/09/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
@@ -81,21 +96,6 @@
              
               <breadCrumb title="动画" url="http://yoursite.com/categories/%E5%8A%A8%E7%94%BB/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/09/04/github%E9%83%A8%E7%BD%B2%E9%A2%84%E8%A7%88%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2017-09-04T09:38:32.995Z</lastmod>
-    <data>
-        <display>
-        <title>github部署预览项目</title>
-        <pubTime>2017-09-04T09:38:32.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
