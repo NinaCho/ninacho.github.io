@@ -105,7 +105,7 @@
 <meta property="og:description" content="添加搜索框，丰富侧边栏，404页面优化">
 <meta property="og:locale" content="chinese">
 <meta property="og:image" content="http://yoursite.com/2017/09/07/搭建个人博客（三）/2.png">
-<meta property="og:updated_time" content="2017-09-07T06:55:18.933Z">
+<meta property="og:updated_time" content="2017-09-07T07:00:18.257Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建个人博客（三）">
 <meta name="twitter:description" content="添加搜索框，丰富侧边栏，404页面优化">
@@ -376,7 +376,7 @@
 
       
         <h5 id="添加搜索框"><a href="#添加搜索框" class="headerlink" title="添加搜索框"></a>添加搜索框</h5><h5 id="丰富侧边栏"><a href="#丰富侧边栏" class="headerlink" title="丰富侧边栏"></a>丰富侧边栏</h5><p>侧边栏可以参照<a href="http://theme-next.iissnan.com/theme-settings.html#rss" target="_blank" rel="external">侧边栏API</a><br>下面我来说说api没有的操作，</p>
-<h5 id="404页面优化"><a href="#404页面优化" class="headerlink" title="404页面优化"></a>404页面优化</h5><p>下面来讲解我设置404页面遇到的错误，我不是在主题下面新建404页面的。操作如下<br>        hexo n 404 # 执行后会在根目录下，名字一定要是404<br>生成如图<br><img src="2.png" alt="2"><br>把以下代码加入在index.md文件即可</p>
+<h5 id="404页面优化"><a href="#404页面优化" class="headerlink" title="404页面优化"></a>404页面优化</h5><p>下面来讲解我设置404页面遇到的错误，我不是在主题下面新建404页面的。操作如下<br>        hexo n 404 # 执行后会在根目录下，名字一定要是404<br>生成如图<br><img src="2.png" alt="2"><br>把以下代码加入在index.md文件即可,next官網的代碼有些問題的這個部分 search_children.js的地址千萬不要加上http ，因爲github是https，http開頭的js文件會被block掉的</p>
 <pre><code>---
 title: 404 Not Found：该页无法显示
 date: 2017-09-04 17:38:32
@@ -395,7 +395,8 @@ permalink: /404
     &lt;script type=&quot;text/javascript&quot; src=&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot; charset=&quot;utf-8&quot; homePageUrl=&quot;/&quot; homePageName=&quot;回到我的主页&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
+</code></pre><h5 id="結束語"><a href="#結束語" class="headerlink" title="結束語"></a>結束語</h5><p>写了三大篇文章走了挺多小坑的，终于可以愉快的写博客了，开心开心。。</p>
+
       
     </div>
     
@@ -572,7 +573,7 @@ permalink: /404
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#丰富侧边栏"><span class="nav-number">2.</span> <span class="nav-text">丰富侧边栏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">3.</span> <span class="nav-text">404页面优化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#丰富侧边栏"><span class="nav-number">2.</span> <span class="nav-text">丰富侧边栏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">3.</span> <span class="nav-text">404页面优化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#結束語"><span class="nav-number">4.</span> <span class="nav-text">結束語</span></a></li></ol></div>
             
 
           </div>
