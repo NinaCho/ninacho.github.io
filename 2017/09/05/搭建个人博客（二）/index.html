@@ -132,7 +132,7 @@
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/29.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/18.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/19.png">
-<meta property="og:updated_time" content="2017-09-08T02:31:50.849Z">
+<meta property="og:updated_time" content="2017-09-08T02:41:24.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30分钟教你使用hexo搭建专属博客（二）">
 <meta name="twitter:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
@@ -542,7 +542,7 @@ count: 100 # 提交最新的一个链接
 host: www.cherryblog.site # 注意：----在百度站长平台中注册的域名
 token: xxxxxxxxxxx # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
 path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
-</code></pre><p>秘钥查看，如图<br><img src="24.png" alt="24"><br>14、再在沾点配置文件加入新的deploye，如图<br><img src="25.png" alt="25"><br>这样执行hexo deploy的时候，新的链接就会被推送了<br>15、设置自动推送<br>在主题配置文件下设置,将baidu_push设置为true<br>打开’themes/next/layout/_third-party/seo/baidu-push.swig’（路径可能会因为主题不同有改变 全局搜索baidu-push.swig就好）在下图找到自动推送的代码，放在baidu-push.swig中<br><img src="27.png" alt="27"><br><img src="28.png" alt="28"><br>最后一步重新hexo g sitemap.xml和baidusitemap.xml 提交给百度<br><img src="29.png" alt="29"><br>ok了 你可以坐等百度收录了，最多半个月吧 这个我听说的，具体时间 你每天都去搜索下就知道了</p>
+</code></pre><p>秘钥查看，如图<br><img src="24.png" alt="24"><br>14、再在沾点配置文件加入新的deploye，如图<br><img src="25.png" alt="25"><br>这样执行hexo deploy的时候，新的链接就会被推送了<br>15、设置自动推送<br>在主题配置文件下设置,将baidu_push设置为true<br>打开’themes/next/layout/_third-party/seo/baidu-push.swig’（路径可能会因为主题不同有改变 全局搜索baidu-push.swig就好）在下图找到自动推送的代码，放在baidu-push.swig中<br><img src="27.png" alt="27"><br><img src="28.png" alt="28"><br>最后一步重新hexo g sitemap.xml和baidusitemap.xml 提交给百度（这一步如果百度提示你抓取失败那是因为githubpages禁止百度抓取，这个后续纠结，前面那两种方法已经可以让百度收录你的url了）<br><img src="29.png" alt="29"><br>ok了 你可以坐等百度收录了，最多半个月吧 这个我听说的，具体时间 你每天都去搜索下就知道了</p>
 <h5 id="自动刷新的尝试"><a href="#自动刷新的尝试" class="headerlink" title="自动刷新的尝试"></a><b>自动刷新的尝试</b></h5><p>每次修改博客 都要手动刷新才能看到效果，对这么懒的我来说实在不方便，所以下面研究下hexo如何设置自动刷新<br>我用的是nodejs的livereload，如果你想使用next内置的livereload就去看<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="external">nextApi</a>吧<br>下面一起来配置吧<br>1、打开bash 输入以下代码</p>
 <pre><code>npm install hexo-livereload --save -g
 </code></pre><p>2、打开浏览器添加插件livereload<br>3、创建脚本，在hexo blog的根目录上创建server.sh，如图（当然你也可以不创建脚本直接执行下面代码，你喜欢咯）<br><img src="18.png" alt="18"><br>4、将以下代码复制在server.sh内，注意文件格式要是utf-8的哦<br>        livereload -e “.md, .html, .png, .svg, .jpg, .gif, .css, .js, .json” | hexo server<br>5、打开bash 去到hexo blog的根目录 输入如下<br>    ./server.sh # 回车<br>6、打开页面,打开右上角的livereload设置，设置livereload开启状态，就会如下图所示，中间小圆点变实心，略等几秒就会实时刷新，完美<br><img src="19.png" alt="19"></p>
