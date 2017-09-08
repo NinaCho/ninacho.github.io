@@ -100,7 +100,7 @@
 <meta name="description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
 <meta name="keywords" content="hexo,sitemap,livereload">
 <meta property="og:type" content="article">
-<meta property="og:title" content="30分钟教你使用hexo搭建个人博客（二）">
+<meta property="og:title" content="30分钟教你使用hexo搭建专属博客（二）">
 <meta property="og:url" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/index.html">
 <meta property="og:site_name" content="Nina&#39; blog">
 <meta property="og:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
@@ -113,6 +113,9 @@
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/4.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/7.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/8.png">
+<meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/20.png">
+<meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/21.png">
+<meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/22.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/9.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/10.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/12.png">
@@ -124,9 +127,9 @@
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/16.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/18.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/19.png">
-<meta property="og:updated_time" content="2017-09-07T08:13:20.403Z">
+<meta property="og:updated_time" content="2017-09-08T01:50:26.850Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="30分钟教你使用hexo搭建个人博客（二）">
+<meta name="twitter:title" content="30分钟教你使用hexo搭建专属博客（二）">
 <meta name="twitter:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
 <meta name="twitter:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/1.png">
 
@@ -164,7 +167,7 @@
 
 
 
-  <title>30分钟教你使用hexo搭建个人博客（二） | Nina' blog</title>
+  <title>30分钟教你使用hexo搭建专属博客（二） | Nina' blog</title>
   
 
 
@@ -352,7 +355,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">30分钟教你使用hexo搭建个人博客（二）</h2>
+          <h2 class="post-title" itemprop="name headline">30分钟教你使用hexo搭建专属博客（二）</h2>
         
 
         <div class="post-meta">
@@ -387,8 +390,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/搭建个人博客/" itemprop="url" rel="index">
-                    <span itemprop="name">搭建个人博客</span>
+                  <a href="/categories/搭建专属博客/" itemprop="url" rel="index">
+                    <span itemprop="name">搭建专属博客</span>
                   </a>
                 </span>
 
@@ -510,7 +513,18 @@ hexo d # 本地预览ok 就部署至gtihub
 </code></pre><p><img src="8.png" alt=""><br>3、 打开GitBash 清缓存 编译</p>
 <pre><code>hexo clean
 hexo g
-</code></pre><p>4、执行以上命令后 你可以在public下找到文件’sitemap.xml’,这个文件就是你的站点地图，里面包含你的站点的网页地址,<br>提交sitemap到google,参考<a href="http://fionat.github.io/blog/2013/10/23/sitemap/" target="_blank" rel="external">如何向google提交sitemap</a><br><b>百度爬虫</b><br>1、 安装百度sitemap</p>
+</code></pre><p>4、执行以上命令后 你可以在public下找到文件’sitemap.xml’,这个文件就是你的站点地图，里面包含你的站点的网页地址,<br>提交sitemap到google,参考<a href="http://fionat.github.io/blog/2013/10/23/sitemap/" target="_blank" rel="external">如何向google提交sitemap</a><br>这里的提交你按照上面的链接文档完成后下面我们来优化下 怎么让你的blog排第一<br>1、 在’source/‘目录下创建文件’robots.txt’,内容是以下类似代码，注意文件的格式是utf-8哦</p>
+<pre><code>User-agent: *
+Allow: /    ## allow 后面跟着的是你的分类 这里的allow按个人的分类写 
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
+Allow: /about/ 
+Allow: /serach/ 
+
+Sitemap: https://ninacho.github.io/sitemap.xml # 记得域名要改下哦
+Sitemap: https://ninacho.github.io/baidusitemap.xml
+</code></pre><p>然后hexo d -g提交一下<br>打开Google Search Console，点击’robots.txt测试工具‘，把robots.txt的内容复制进去 下面你懂得，先测试在提交 测试没有报错再提交，测试的url可以不写<br>如图<br><img src="20.png" alt="20"><br>下面这一步很重要！！！！<br>在你提交了长点地图之后，打开Google Search Console，点击google抓取工具，url不填表示首页，一定要点击抓取 再点击编入索引，对应的把你的菜单url输入，如图，记得一定要点击<b>编入索引</b><br><img src="21.png" alt="21"><br>注意，如果出现这几种情况，如:完成、部分完成、重定向等，自由这三种情况是可以提交的。除非提示你找不到那就没撤了 你写错url了<br>在google搜索 ‘ninacho 30分钟搭建个人博客’,下图是不是很完美<br><img src="22.png" alt="22"><br><b>百度爬虫，让你的博客在百度搜索排第一 哈哈哈</b><br>1、 安装百度sitemap</p>
 <pre><code>npm install hexo-generator-baidu-sitemap --save
 </code></pre><p>2、修改站点配置文件’_config.yml’，找到’plugins’属性,如图,<br><img src="9.png" alt="9"><br>3、 打开GitBash 清缓存 编译</p>
 <pre><code>hexo clean
@@ -564,8 +578,8 @@ hexo g
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/07/搭建个人博客（三）/" rel="prev" title="30分钟教你使用hexo搭建个人博客（三）">
-                30分钟教你使用hexo搭建个人博客（三） <i class="fa fa-chevron-right"></i>
+              <a href="/2017/09/07/搭建个人博客（三）/" rel="prev" title="30分钟教你使用hexo搭建专属博客（三）">
+                30分钟教你使用hexo搭建专属博客（三） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -657,7 +671,7 @@ hexo g
             
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -1212,6 +1226,21 @@ hexo g
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 
