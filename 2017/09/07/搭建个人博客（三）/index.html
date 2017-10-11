@@ -109,7 +109,7 @@
 <meta property="og:image" content="https://ninacho.github.io/2017/09/07/搭建个人博客（三）/6.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/07/搭建个人博客（三）/2.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/07/搭建个人博客（三）/3.png">
-<meta property="og:updated_time" content="2017-09-08T01:56:17.819Z">
+<meta property="og:updated_time" content="2017-10-11T09:06:12.532Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30分钟教你使用hexo搭建专属博客（三）">
 <meta name="twitter:description" content="添加搜索框，404页面优化，部署后为何语言显示不正确, 打赏">
@@ -442,7 +442,7 @@ permalink: /404
 &lt;/html&gt;
 </code></pre><h5 id="部署后为何语言显示不正确？"><a href="#部署后为何语言显示不正确？" class="headerlink" title="部署后为何语言显示不正确？"></a>部署后为何语言显示不正确？</h5><p>部署后的语言居然是不知道哪国的翻译，好无语，如图<br><img src="3.png" alt="3"><br>下面一起来看下到底是什么原因吧<br>若没有设定 language 的值或者 language: default或者language: chinese，会出现语言选择不正确的情况。 因此为了确保语言正确显示，<br>请明确指定需要使用的语言。 编辑 站点配置文件， 将 language 字段设置成明确的语言代码。 例如，设置语言为简体中文：（这句话实在<a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="external">官网</a>找到的）</p>
 <pre><code>language: zh-Hans #具体的属性设置建议看官网,有可能会因为版本不同而有修改
-</code></pre><h5 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h5><h5 id="結束語"><a href="#結束語" class="headerlink" title="結束語"></a>結束語</h5><p>写了三大篇文章呕心沥血呀，毕竟还是走了挺多小坑的，终于可以愉快的写博客了，开心开心。。</p>
+</code></pre><h5 id="显示打赏"><a href="#显示打赏" class="headerlink" title="显示打赏"></a>显示打赏</h5><h5 id="結束語"><a href="#結束語" class="headerlink" title="結束語"></a>結束語</h5><p>写了三大篇文章呕心沥血呀，毕竟还是走了挺多小坑的，终于可以愉快的写博客了，开心开心。。</p>
 
       
     </div>
@@ -509,6 +509,8 @@ permalink: /404
           
   <div class="comments" id="comments">
     
+      <div id="uyan_frame"></div>
+    
   </div>
 
 
@@ -559,7 +561,7 @@ permalink: /404
             
               <a href="/archives">
             
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -624,7 +626,7 @@ permalink: /404
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">2.</span> <span class="nav-text">404页面优化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署后为何语言显示不正确？"><span class="nav-number">3.</span> <span class="nav-text">部署后为何语言显示不正确？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#打赏"><span class="nav-number">4.</span> <span class="nav-text">打赏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#結束語"><span class="nav-number">5.</span> <span class="nav-text">結束語</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加搜索框"><span class="nav-number">1.</span> <span class="nav-text">添加搜索框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#404页面优化"><span class="nav-number">2.</span> <span class="nav-text">404页面优化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署后为何语言显示不正确？"><span class="nav-number">3.</span> <span class="nav-text">部署后为何语言显示不正确？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#显示打赏"><span class="nav-number">4.</span> <span class="nav-text">显示打赏</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#結束語"><span class="nav-number">5.</span> <span class="nav-text">結束語</span></a></li></ol></div>
             
 
           </div>
@@ -784,10 +786,16 @@ permalink: /404
 
 
 
+    
+      
+    
+
+   
+        <!-- UY BEGIN -->
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2143249"></script>
+        <!-- UY END -->
+    
   
-
-
-
 
 
   

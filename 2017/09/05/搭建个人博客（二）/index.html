@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="sitemap,livereload,hexo," />
+  <meta name="keywords" content="hexo,sitemap,livereload," />
 
 
 
@@ -98,7 +98,7 @@
 
 
 <meta name="description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
-<meta name="keywords" content="sitemap,livereload,hexo">
+<meta name="keywords" content="hexo,sitemap,livereload">
 <meta property="og:type" content="article">
 <meta property="og:title" content="30分钟教你使用hexo搭建专属博客（二）">
 <meta property="og:url" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/index.html">
@@ -109,8 +109,7 @@
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/2.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/5.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/6.png">
-<meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/3.png">
-<meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/4.png">
+<meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/31.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/7.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/8.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/20.png">
@@ -130,9 +129,10 @@
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/27.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/28.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/29.png">
+<meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/30.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/18.png">
 <meta property="og:image" content="https://ninacho.github.io/2017/09/05/搭建个人博客（二）/19.png">
-<meta property="og:updated_time" content="2017-09-08T02:41:24.210Z">
+<meta property="og:updated_time" content="2017-10-11T09:28:19.429Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="30分钟教你使用hexo搭建专属博客（二）">
 <meta name="twitter:description" content="添加博客必要功能 置顶按钮，评论，换主题，设置头像，站点统计，怎么提交访问量，自动刷新，如何随时随地修改博客">
@@ -480,9 +480,22 @@ hexo g # 编译
 hexo s -p 3600 # 本地预览 打开locahost:3600 预览ok
 hexo d # 本地预览ok 就部署至gtihub
 </code></pre><p>本地预览是ok的 但是gtihub.io上面看的主题没有改变 那就是缓存问题 强刷页面 骚等十分钟再去查看即可<br>修改主题底部，找了很多资料都没查出来 好烦躁呀 不改实在对不起我的强迫症<br><img src="5.png" alt=""><br>終于都給我找到怎麽改了, 下面就一起來修改<br>1、找到’\themes\next\layout_partials\’下面的footer.swig文件，打开会发现，如下图的语句，修改为你要的就行了，修改后 重新编译下 刷新页面就行了<br><img src="6.png" alt=""></p>
-<h5 id="添加评论功能-待续……"><a href="#添加评论功能-待续……" class="headerlink" title="添加评论功能 待续……"></a><b>添加评论功能</b> 待续……</h5><p>NexT目前出到5.1.0版本，功能模块已经相当的丰富。NexT主题集成了评论系统，只需要设置相关的属性即可实现功能，<br>其目前支持多说、Disqus、Facebook评论、Hyper评论、网页云跟帖等，其中“多说”是NexT推荐的评论系统,但是官网项目关闭了 omgggg 不活了<br>所以我看了下其他人的博客发现友言挺多人推荐的，下面来</p>
-<h6 id="添加友言版的评论功能"><a href="#添加友言版的评论功能" class="headerlink" title="添加友言版的评论功能"></a><div id="youyan">添加友言版的评论功能</div></h6><p>1、 注册<a href="http://www.uyan.cc/" target="_blank" rel="external">友言官网</a><br>    注册后 出现下图<br>    <img src="3.png" alt=""><br>2、打开next主题配置文件，在其中找到属性youyan_uid，然后在:后添加之前复制的uid，如下图所示：<br>    <img src="4.png" alt=""></p>
-<p>如果配置文件找到的’youyan_uid’被注释掉的，去掉注释就行了，<br>但是部署上去后发现gtihub并没有显示评论功能，本地预览是ok的，所以友言后续我有时间再去看下什么原因，这个原因待续….<br>其实next是集成了Disqus的 但是你懂得 中国国情<br>1、<br>如需取消某个 页面/文章 的评论，在 md 文件的 front-matter 中增加 comments: false<br>这里强调一下：所有属性的设置，其:后必须有一个空格。</p>
+<h5 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a><b>添加评论功能</b></h5><p>NexT目前出到5.1.0版本，功能模块已经相当的丰富。NexT主题集成了评论系统，只需要设置相关的属性即可实现功能，<br>其目前支持多说、Disqus、Facebook评论、Hyper评论、网页云跟帖等，其中“多说”是NexT推荐的评论系统,但是官网项目关闭了 omgggg 不活了</p>
+<h6 id="添加畅言评论功能"><a href="#添加畅言评论功能" class="headerlink" title="添加畅言评论功能"></a>添加畅言评论功能</h6><p>因为可以qq，微博，手机三端登录，不纠结了 就用畅言了，不过有小伙伴对畅言评论需要备案这件事望而却步，我试了下，其实能挺快搞定的。<br>1、获取畅言评论的APP ID 和APP KEY<br>    去<a href="http://changyan.kuaizhan.com" target="_blank" rel="external">畅言评论官网</a>注册一个账号。注册成功后根据官网页面的步骤 选择你要的功能和类型， 如图<br>    <img src="31.png" alt="31"></p>
+<!--#所以我看了下其他人的博客发现友言挺多人推荐的，下面来
+###### <div id="youyan">添加友言版的评论功能</div>-->
+<!--# 1、 注册<a href="http://www.uyan.cc/">友言官网</a>
+#    注册后 出现下图
+#    ![](3.png)
+#2、打开next主题配置文件，在其中找到属性youyan_uid，然后在:后添加之前复制的uid，如下图所示：
+#    ![](4.png)
+
+# 如果配置文件找到的'youyan_uid'被注释掉的，去掉注释就行了，
+# 但是部署上去后发现gtihub并没有显示评论功能，本地预览是ok的，所以友言后续我有时间再去看下什么原因，这个原因待续....
+# 其实next是集成了Disqus的 但是你懂得 中国国情
+# 1、
+# 如需取消某个 页面/文章 的评论，在 md 文件的 front-matter 中增加 comments: false
+# 这里强调一下：所有属性的设置，其:后必须有一个空格。-->
 <h5 id="添加头像"><a href="#添加头像" class="headerlink" title="添加头像"></a><b>添加头像</b></h5><p>在站点配置文件，不是主题配置文件中，（其实设置在哪个配置文件都可以生效，但设置在主题配置的时候如果后续你要换主题那么头像配置也就没有了）添加：（如果是注释去掉注释就行了，不存在就新增）</p>
 <pre><code>avatar: url #avatar: /iamges/avatar.jpg （路径是在source/iamges下）
 </code></pre><p>把侧边栏头像变成圆形，并且鼠标停留在上面发生旋转效果<br>修改themes\next\source\css_common\components\sidebar\sidebar-author.styl,找到’site-author-image’這個類，將以下代碼替換，刷新頁面即可</p>
@@ -542,7 +555,7 @@ count: 100 # 提交最新的一个链接
 host: www.cherryblog.site # 注意：----在百度站长平台中注册的域名
 token: xxxxxxxxxxx # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
 path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
-</code></pre><p>秘钥查看，如图<br><img src="24.png" alt="24"><br>14、再在沾点配置文件加入新的deploye，如图<br><img src="25.png" alt="25"><br>这样执行hexo deploy的时候，新的链接就会被推送了<br>15、设置自动推送<br>在主题配置文件下设置,将baidu_push设置为true<br>打开’themes/next/layout/_third-party/seo/baidu-push.swig’（路径可能会因为主题不同有改变 全局搜索baidu-push.swig就好）在下图找到自动推送的代码，放在baidu-push.swig中<br><img src="27.png" alt="27"><br><img src="28.png" alt="28"><br>最后一步重新hexo g sitemap.xml和baidusitemap.xml 提交给百度（这一步如果百度提示你抓取失败那是因为githubpages禁止百度抓取，这个后续纠结，前面那两种方法已经可以让百度收录你的url了）<br><img src="29.png" alt="29"><br>ok了 你可以坐等百度收录了，最多半个月吧 这个我听说的，具体时间 你每天都去搜索下就知道了</p>
+</code></pre><p>秘钥查看，如图<br><img src="24.png" alt="24"><br>14、再在沾点配置文件加入新的deploye，如图<br><img src="25.png" alt="25"><br>这样执行hexo deploy的时候，新的链接就会被推送了<br>15、设置自动推送<br>在主题配置文件下设置,将baidu_push设置为true<br>打开’themes/next/layout/_third-party/seo/baidu-push.swig’（路径可能会因为主题不同有改变 全局搜索baidu-push.swig就好）在下图找到自动推送的代码，放在baidu-push.swig中<br><img src="27.png" alt="27"><br><img src="28.png" alt="28"><br>最后一步重新hexo g sitemap.xml和baidusitemap.xml 提交给百度（这一步如果百度提示你抓取失败那是因为githubpages禁止百度抓取，这个后续纠结，前面那两种方法已经可以让百度收录你的url了）<br><img src="29.png" alt="29"><br>ok了 你可以坐等百度收录了，最多半个月吧 这个我听说的，具体时间 你每天都去搜索下就知道了<br>一个半月后我随意搜索了下 耶耶 排第一了<br><img src="30.png" alt="30"></p>
 <h5 id="自动刷新的尝试"><a href="#自动刷新的尝试" class="headerlink" title="自动刷新的尝试"></a><b>自动刷新的尝试</b></h5><p>每次修改博客 都要手动刷新才能看到效果，对这么懒的我来说实在不方便，所以下面研究下hexo如何设置自动刷新<br>我用的是nodejs的livereload，如果你想使用next内置的livereload就去看<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="external">nextApi</a>吧<br>下面一起来配置吧<br>1、打开bash 输入以下代码</p>
 <pre><code>npm install hexo-livereload --save -g
 </code></pre><p>2、打开浏览器添加插件livereload<br>3、创建脚本，在hexo blog的根目录上创建server.sh，如图（当然你也可以不创建脚本直接执行下面代码，你喜欢咯）<br><img src="18.png" alt="18"><br>4、将以下代码复制在server.sh内，注意文件格式要是utf-8的哦<br>        livereload -e “.md, .html, .png, .svg, .jpg, .gif, .css, .js, .json” | hexo server<br>5、打开bash 去到hexo blog的根目录 输入如下<br>    ./server.sh # 回车<br>6、打开页面,打开右上角的livereload设置，设置livereload开启状态，就会如下图所示，中间小圆点变实心，略等几秒就会实时刷新，完美<br><img src="19.png" alt="19"></p>
@@ -564,11 +577,11 @@ path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本�
       
         <div class="post-tags">
           
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
             <a href="/tags/sitemap/" rel="tag"># sitemap</a>
           
             <a href="/tags/livereload/" rel="tag"># livereload</a>
-          
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
           
         </div>
       
@@ -623,6 +636,8 @@ path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本�
           
   <div class="comments" id="comments">
     
+      <div id="uyan_frame"></div>
+    
   </div>
 
 
@@ -673,7 +688,7 @@ path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本�
             
               <a href="/archives">
             
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -738,7 +753,7 @@ path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加置顶按钮"><span class="nav-number">1.</span> <span class="nav-text">添加置顶按钮</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#更换主题"><span class="nav-number">2.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加评论功能-待续……"><span class="nav-number">3.</span> <span class="nav-text">添加评论功能 待续……</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#添加友言版的评论功能"><span class="nav-number">3.1.</span> <span class="nav-text">添加友言版的评论功能</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加头像"><span class="nav-number">4.</span> <span class="nav-text">添加头像</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#统计访问量"><span class="nav-number">5.</span> <span class="nav-text">统计访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一起来提升访问量"><span class="nav-number">6.</span> <span class="nav-text">一起来提升访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自动刷新的尝试"><span class="nav-number">7.</span> <span class="nav-text">自动刷新的尝试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#随时随地修改你的博客"><span class="nav-number">8.</span> <span class="nav-text">随时随地修改你的博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#添加置顶按钮"><span class="nav-number">1.</span> <span class="nav-text">添加置顶按钮</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#更换主题"><span class="nav-number">2.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加评论功能"><span class="nav-number">3.</span> <span class="nav-text">添加评论功能</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#添加畅言评论功能"><span class="nav-number">3.1.</span> <span class="nav-text">添加畅言评论功能</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加头像"><span class="nav-number">4.</span> <span class="nav-text">添加头像</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#统计访问量"><span class="nav-number">5.</span> <span class="nav-text">统计访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一起来提升访问量"><span class="nav-number">6.</span> <span class="nav-text">一起来提升访问量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自动刷新的尝试"><span class="nav-number">7.</span> <span class="nav-text">自动刷新的尝试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#随时随地修改你的博客"><span class="nav-number">8.</span> <span class="nav-text">随时随地修改你的博客</span></a></li></ol></div>
             
 
           </div>
@@ -898,10 +913,16 @@ path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本�
 
 
 
+    
+      
+    
+
+   
+        <!-- UY BEGIN -->
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2143249"></script>
+        <!-- UY END -->
+    
   
-
-
-
 
 
   
