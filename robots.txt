@@ -1,9 +1,6 @@
 User-agent: *
 Allow: /
 Allow: /archives/
-Allow: /categories/
-Allow: /tags/ 
-Allow: /about/ 
 Allow: /serach/ 
 
 Sitemap: https://ninacho.github.io/sitemap.xml
